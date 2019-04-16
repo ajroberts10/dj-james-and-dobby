@@ -4,15 +4,14 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
 import Home from '../../pages/Home';
 
-library.add(faStroopwafel);
-const baseUrl = process.env.PUBLIC_URL;
+library.add(faStroopwafel)
 
 class App extends Component {
   render() {
     return (
         <Router>
           <div>
-            <Route exact path={baseUrl + "/"} component={Home} />
+            <Route exact path="/" component={Home} />
           </div>
         </Router>
     );
