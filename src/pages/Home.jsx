@@ -1,20 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.jpg';
+import Navbar from '../components/Navbar/Navbar';
+import Logo from '../components/Logo/Logo';
+
 import './Home.scss';
 
 class Home extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            New website coming soon!
-          </p>
-        </header>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div>
+                <Navbar />
+                <div className="App">
+                  <header className="App-header">
+                    <Logo />
+                    <p>
+                      New website coming soon!
+                    </p>
+                  </header>
+                </div>
+            </div>
+        );
+    }
 }
 
 export default Home;
