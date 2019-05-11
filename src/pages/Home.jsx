@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import Logo from '../components/Logo/Logo';
+import Jumbotron from '../components/Jumbotron/Jumbotron';
 
 import './Home.scss';
 
@@ -10,10 +11,10 @@ class Home extends Component {
             <div>
                 <Navbar />
                 <div className="App">
+                  <Jumbotron />
                   <header className="App-header">
-                    <Logo />
                     <p>
-                      New website coming soon!
+                      Website Under Construction!
                     </p>
                   </header>
                 </div>
