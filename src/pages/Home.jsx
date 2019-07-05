@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import Sticky from 'react-stickynode';
+
 import Navbar from '../components/Navbar/Navbar';
-import Logo from '../components/Logo/Logo';
 import Jumbotron from '../components/Jumbotron/Jumbotron';
+import Packages from '../components/Packages/Packages';
 
 import './Home.scss';
 
@@ -9,14 +11,13 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <Navbar />
+
+                <Sticky enabled={true} innerZ={50}>
+                    <Navbar />
+                </Sticky>
                 <div className="App">
                   <Jumbotron />
-                  <header className="App-header">
-                    <p>
-                      Website Under Construction!
-                    </p>
-                  </header>
+                  <Packages />
                 </div>
             </div>
         );

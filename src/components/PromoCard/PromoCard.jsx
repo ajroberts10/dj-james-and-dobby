@@ -8,19 +8,17 @@ class PromoCard extends Component {
             <div className="promoCard">
                 <div className="container">
                     <div className="row">
-                        <div className="col-sm-6 col-md-6">
+                        <div className="col-sm-12 col-md-12 col-lg-6">
                             <img src={logo} alt="Logo" className="promoCard__image" />
                         </div>
-                        <div className="col-sm-6 col-md-6 promoCard__content">
+                        <div className="col-sm-12 col-md-12 col-lg-6 promoCard__content">
                             <div className="promoCard__content-header">
-                                <h2>DJ Services</h2>
+                                <h2>About Us</h2>
                             </div>
                             <div className="promoCard__content-text">
-                                <ul className="list-group list-group-flush promoCard__content-list">
-                                    <li className="list-group-item promoCard__content-list-item">Weddings</li>
-                                    <li className="list-group-item promoCard__content-list-item">Parties</li>
-                                    <li className="list-group-item promoCard__content-list-item">Corporate Functions</li>
-                                </ul>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
                             </div>
                         </div>
                     </div>

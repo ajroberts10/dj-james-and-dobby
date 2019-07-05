@@ -5,7 +5,7 @@ import './Jumbotron.scss';
 class Jumbotron extends Component {
     render() {
         return (
-            <div className="jumbotron jumbotron-fluid">
+            <div id="home" className="jumbotron jumbotron-fluid">
                 <div className="container">
                     <PromoCard />
                 </div>
