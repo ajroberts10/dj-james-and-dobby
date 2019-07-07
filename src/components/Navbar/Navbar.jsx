@@ -45,7 +45,7 @@ class Navbar extends Component {
                                     to="packages"
                                     spy={true}
                                     smooth={true}
-                                    offset={-70}
+                                    offset={-80}
                                     duration= {500}
                                     data-toggle="collapse"
                                     data-target=".navbar-collapse"
