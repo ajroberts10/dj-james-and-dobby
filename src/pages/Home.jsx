@@ -4,6 +4,7 @@ import Sticky from 'react-stickynode';
 import Navbar from '../components/Navbar/Navbar';
 import Jumbotron from '../components/Jumbotron/Jumbotron';
 import Packages from '../components/Packages/Packages';
+import Downloads from '../components/Downloads/Downloads';
 
 import './Home.scss';
 
@@ -18,6 +19,7 @@ class Home extends Component {
                 <div className="App">
                   <Jumbotron />
                   <Packages />
+                  <Downloads />
                 </div>
             </div>
         );

@@ -4,11 +4,16 @@
     }
 }
 
+.navbar__title {
+    color: #aaa !important;
+}
+
 .navbar-nav {
     padding-left: 5px;
 }
 
 a {
     color: #aaa;
+    cursor: pointer;
     font-weight: 200;
 }

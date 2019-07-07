@@ -8,12 +8,11 @@ class Navbar extends Component {
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container">
                     <Link
-                        className="navbar-brand"
+                        className="navbar-brand navbar__title"
                         activeClass="active"
                         to="home"
                         spy={true}
                         smooth={true}
-                        offset={-70}
                         duration= {500}
                     >
                         DJ James &amp; DJ Dobby
@@ -31,7 +30,7 @@ class Navbar extends Component {
                                     to="home"
                                     spy={true}
                                     smooth={true}
-                                    offset={-70}
+                                    offset={-48}
                                     duration= {500}
                                 >
                                     Home
@@ -48,6 +47,19 @@ class Navbar extends Component {
                                     duration= {500}
                                 >
                                     Packages
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link
+                                    className="nav-link"
+                                    activeClass="active"
+                                    to="downloads"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-48}
+                                    duration= {500}
+                                >
+                                    Downloads
                                 </Link>
                             </li>
                         </ul>
