@@ -32,6 +32,8 @@ class Navbar extends Component {
                                     smooth={true}
                                     offset={-48}
                                     duration= {500}
+                                    data-toggle="collapse"
+                                    data-target=".navbar-collapse"
                                 >
                                     Home
                                 </Link>
@@ -45,6 +47,8 @@ class Navbar extends Component {
                                     smooth={true}
                                     offset={-70}
                                     duration= {500}
+                                    data-toggle="collapse"
+                                    data-target=".navbar-collapse"
                                 >
                                     Packages
                                 </Link>
@@ -58,6 +62,8 @@ class Navbar extends Component {
                                     smooth={true}
                                     offset={-48}
                                     duration= {500}
+                                    data-toggle="collapse"
+                                    data-target=".navbar-collapse"
                                 >
                                     Downloads
                                 </Link>
