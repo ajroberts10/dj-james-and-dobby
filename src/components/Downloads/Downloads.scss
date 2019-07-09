@@ -1,7 +1,13 @@
-.jumbotron {
+.downloads {
     align-items: center;
     background-size: cover;
+    background-color: #e9ecef;
     background-repeat: no-repeat;
     display: flex;
+    height: 100vh;
     justify-content: center;
+
+    &__title {
+        margin: 32px 0;
+    }
 }

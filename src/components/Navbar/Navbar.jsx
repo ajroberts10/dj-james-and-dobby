@@ -11,8 +11,8 @@ class Navbar extends Component {
                         className="navbar-brand navbar__title"
                         activeClass="active"
                         to="home"
-                        spy={true}
                         smooth={true}
+                        offset={-48}
                         duration= {500}
                     >
                         DJ James &amp; DJ Dobby
@@ -28,7 +28,6 @@ class Navbar extends Component {
                                     className="nav-link"
                                     activeClass="active"
                                     to="home"
-                                    spy={true}
                                     smooth={true}
                                     offset={-48}
                                     duration= {500}
@@ -43,7 +42,6 @@ class Navbar extends Component {
                                     className="nav-link"
                                     activeClass="active"
                                     to="packages"
-                                    spy={true}
                                     smooth={true}
                                     offset={-80}
                                     duration= {500}
@@ -58,7 +56,7 @@ class Navbar extends Component {
                                     className="nav-link"
                                     activeClass="active"
                                     to="downloads"
-                                    spy={true}
+                                    // spy={true}
                                     smooth={true}
                                     offset={-48}
                                     duration= {500}
