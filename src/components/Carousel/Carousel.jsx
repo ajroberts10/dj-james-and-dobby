@@ -13,21 +13,21 @@ class Carousel extends Component {
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <img className="d-block w-100" src="https://via.placeholder.com/640x360" alt="First slide" />
-                        <div class="carousel-caption d-none d-md-block">
+                        <div className="carousel-caption d-none d-md-block">
                             <h5>Package One</h5>
                             <p>Some awesome DJ package</p>
                         </div>
                     </div>
                     <div className="carousel-item">
                         <img className="d-block w-100" src="https://via.placeholder.com/640x360" alt="Second slide" />
-                        <div class="carousel-caption d-none d-md-block">
+                        <div className="carousel-caption d-none d-md-block">
                             <h5>Package Two</h5>
                             <p>Some awesome DJ package</p>
                         </div>
                     </div>
                     <div className="carousel-item">
                         <img className="d-block w-100" src="https://via.placeholder.com/640x360" alt="Third slide" />
-                        <div class="carousel-caption d-none d-md-block">
+                        <div className="carousel-caption d-none d-md-block">
                             <h5>Package Three</h5>
                             <p>Some awesome DJ package</p>
                         </div>

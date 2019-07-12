@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import PromoCard from '../PromoCard/PromoCard';
-import './Jumbotron.scss';
+import PromoCard from '../../components/PromoCard/PromoCard';
+import './Home.scss';
 
-class Jumbotron extends Component {
+class Home extends Component {
     render() {
         return (
-            <div id="home" className="jumbotron jumbotron-fluid">
+            <div id="home" className=" home jumbotron jumbotron-fluid">
                 <div className="container">
                     <PromoCard />
                 </div>
@@ -14,4 +14,4 @@ class Jumbotron extends Component {
     }
 }
 
-export default Jumbotron;
+export default Home;

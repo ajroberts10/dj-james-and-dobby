@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Carousel from '../Carousel/Carousel';
+import Carousel from '../../components/Carousel/Carousel';
 import './Packages.scss';
 
 class Jumbotron extends Component {

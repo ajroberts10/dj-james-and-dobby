@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import Sticky from 'react-stickynode';
 
 import Navbar from '../components/Navbar/Navbar';
-import Jumbotron from '../components/Jumbotron/Jumbotron';
-import Packages from '../components/Packages/Packages';
-import Downloads from '../components/Downloads/Downloads';
+import Jumbotron from '../sections/Home/Home';
+import Packages from '../sections/Packages/Packages';
+import Downloads from '../sections/Downloads/Downloads';
 
-import './Home.scss';
+import './Index.scss';
 
 class Home extends Component {
     render() {
