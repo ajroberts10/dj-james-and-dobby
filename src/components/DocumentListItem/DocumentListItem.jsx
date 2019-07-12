@@ -11,7 +11,7 @@ class DocumentListItem extends Component {
                 <img src={pdf} className="align-self-center mr-3" alt="..."/>
                 <div className="media-body">
                     <h5 className="mt-0">{title}</h5>
-                    <p class="lead">
+                    <p className="lead">
                         {description}
                     </p>
                 </div>
