@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import './Navbar.scss';
 
 class Navbar extends Component {
@@ -43,7 +43,7 @@ class Navbar extends Component {
                                     activeClass="active"
                                     to="packages"
                                     smooth={true}
-                                    offset={-80}
+                                    offset={-48}
                                     duration= {500}
                                     data-toggle="collapse"
                                     data-target=".navbar-collapse"

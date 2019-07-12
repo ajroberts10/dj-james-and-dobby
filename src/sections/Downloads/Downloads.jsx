@@ -1,17 +1,27 @@
 import React, { Component } from 'react';
+import DocumentListItem from '../../components/DocumentListItem/DocumentListItem';
 import './Downloads.scss';
+
+const title1 = 'Public Liability Insurance Certificate';
+const description1 = 'Click to download.';
+const path1 = '/test.pdf';
+const filename1 = 'pliCert';
+
+const title2 = 'Portable Appliance Testing Certificate';
+const description2 = 'Click to download.';
+const path2 = '/test.pdf';
+const filename2 = 'patCert'
 
 class Downloads extends Component {
     render() {
         return (
-            <div id="downloads" className="downloads">
-                <div className="container">
-                    <h2 className="downloads__title">Downloads</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id massa odio. Suspendisse vitae iaculis erat. Pellentesque sit amet risus ac quam maximus iaculis. Proin ullamcorper, nisl quis aliquet pharetra, orci felis porttitor lectus, in ultrices elit quam eget libero. Suspendisse justo ex, varius eget est quis, porttitor euismod mauris. Sed ex libero, mollis sed dapibus elementum, convallis ut nunc. Fusce ac pulvinar mi. Nunc scelerisque magna in sem auctor, quis aliquam felis ultrices. Donec vel lorem eu ipsum vulputate pellentesque quis sit amet ex.
-                    </p>
+            <section className="bg-light page-section" id="downloads">
+                <div className="container downloads">
+                    <h2 className="downloads__title text-center display-5">Downloads</h2>
+                    <DocumentListItem title={title1} description={description1} path={path1} filename={filename1} />
+                    <DocumentListItem title={title2} description={description2} path={path2} filename={filename2} />
                 </div>
-            </div>
+            </section>
         );
     }
 }

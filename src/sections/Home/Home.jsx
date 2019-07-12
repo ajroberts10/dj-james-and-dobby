@@ -5,11 +5,11 @@ import './Home.scss';
 class Home extends Component {
     render() {
         return (
-            <div id="home" className=" home jumbotron jumbotron-fluid">
-                <div className="container">
+            <section className="bg-light page-section" id="home">
+                <div className="container home">
                     <PromoCard />
                 </div>
-            </div>
+            </section>
         );
     }
 }

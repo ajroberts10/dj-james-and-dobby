@@ -5,12 +5,12 @@ import './Packages.scss';
 class Jumbotron extends Component {
     render() {
         return (
-            <div id="packages" className="packages">
-                <div className="container">
-                    <h2 className="packages__title">Packages</h2>
+            <section className="page-section" id="packages">
+                <div className="container packages">
+                    <h2 className="packages__title text-center display-5">Packages</h2>
                     <Carousel />
                 </div>
-            </div>
+            </section>
         );
     }
 }
