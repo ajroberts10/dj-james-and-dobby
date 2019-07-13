@@ -55,6 +55,20 @@ class Navbar extends Component {
                                 <Link
                                     className="nav-link"
                                     activeClass="active"
+                                    to="gallery"
+                                    smooth={true}
+                                    offset={-48}
+                                    duration= {500}
+                                    data-toggle="collapse"
+                                    data-target=".navbar-collapse"
+                                >
+                                    Gallery
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link
+                                    className="nav-link"
+                                    activeClass="active"
                                     to="downloads"
                                     // spy={true}
                                     smooth={true}

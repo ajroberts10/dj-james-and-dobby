@@ -4,7 +4,9 @@ import Sticky from 'react-stickynode';
 import Navbar from '../components/Navbar/Navbar';
 import Jumbotron from '../sections/Home/Home';
 import Packages from '../sections/Packages/Packages';
+import Gallery from '../sections/Gallery/Gallery';
 import Downloads from '../sections/Downloads/Downloads';
+
 
 import './Index.scss';
 
@@ -19,6 +21,7 @@ class Home extends Component {
                 <div className="App">
                   <Jumbotron />
                   <Packages />
+                  <Gallery />
                   <Downloads />
                 </div>
             </div>
