@@ -1,8 +1,12 @@
+
+@import '../../styles/mixins.scss';
+
 .logo {
     img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 30%;
+        width: 60%;
+
+        @include lg {
+            width: 90%;
+        }
     }
 }

@@ -1,30 +1,78 @@
 @import '../../styles/mixins.scss';
 
+.promoCard:before {
+    background-attachment: fixed;
+    background-image: url('./dj.JPG');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
 .promoCard {
-    background-color: white;
-    padding: 32px 32px;
-
-    &__image {
-        width: 70%;
-
-        @include md {
-            width: 70%;
-        }
-
-        @include lg {
-            width: 80%;
-        }
-    }
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    width: 100vw;
 
     &__content {
-        text-align: left;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
 
-        &-header {
-            margin-bottom: 16px;
-        }
+    &__heading {
+        font-size: 3em;
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 0.5em;
+        position: relative;
+        text-align: center;
 
-        &-list-item {
-            padding-left: 0;
+        @include lg {
+            font-size: 5em;
         }
     }
+
+    &__sub-heading {
+        background-color: rgba(67, 59, 59, 0.6);
+        box-decoration-break: clone;
+        color: #fff;
+        display: inline;
+        font-size: 1.2em;
+        padding: 0.8rem;
+        text-align: center;
+        -webkit-box-decoration-break: clone;
+
+        @include lg {
+            font-size: 1.5em;
+        }
+    }
+
+    & .btn {
+        background-image: linear-gradient(to bottom right, rgb(255, 141, 42), purple);
+        border: 3px solid black;
+        color: black;
+        display: block;
+        font-size: 1.5em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        padding: 0.5em;
+        position: relative;
+
+        text-decoration: none;
+        width: 250px;
+    }
 }
+

@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
-import logo from '../Logo/logo.jpg';
+import Logo from '../Logo/Logo';
 import './PromoCard.scss';
 
 class PromoCard extends Component {
     render() {
         return (
-            <div className="promoCard">
+            <div className="promoCard jumbotron jumbotron-fluid">
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-12 col-md-12 col-lg-6">
-                            <img src={logo} alt="Logo" className="promoCard__image" />
+                            <Logo />
                         </div>
                         <div className="col-sm-12 col-md-12 col-lg-6 promoCard__content">
                             <div className="promoCard__content-header">
-                                <h2 className="featurette-heading display-5">About Us</h2>
-                            </div>
-                            <div className="promoCard__content-text">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                <h1 className="promoCard__heading featurette-heading">Professional Event DJs</h1>
+                                <p className="lead promoCard__sub-heading">Private Functions | Large Scale Events | Festivals </p>
+                                <hr className="my-4" />
+                                <p className="lead">
+                                    <a className="btn btn-primary btn-lg" href="#" role="button">Enquire Now</a>
                                 </p>
                             </div>
                         </div>

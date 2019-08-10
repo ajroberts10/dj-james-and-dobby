@@ -6,7 +6,7 @@ class Home extends Component {
     render() {
         return (
             <section className="bg-light page-section" id="home">
-                <div className="container home">
+                <div className="home">
                     <PromoCard />
                 </div>
             </section>

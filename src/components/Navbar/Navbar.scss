@@ -1,3 +1,6 @@
+.navbar {
+    background-color: black !important;
+}
 .navbar-brand {
     img {
         width: 270px;
@@ -5,7 +8,7 @@
 }
 
 .navbar__title {
-    color: #aaa !important;
+    color: white !important;
 }
 
 .navbar-nav {
@@ -13,7 +16,7 @@
 }
 
 a {
-    color: #aaa;
+    color: white !important;
     cursor: pointer;
     font-weight: 200;
 }
