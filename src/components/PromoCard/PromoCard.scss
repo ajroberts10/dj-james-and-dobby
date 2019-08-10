@@ -21,20 +21,22 @@
     height: 100vh;
     justify-content: center;
     position: relative;
-    top: -40px;
+    top: -20px;
     text-align: center;
     width: 100vw;
+
+    @include lg {
+        margin: 0;
+        top: -40px;
+    }
 
     &__content {
         align-items: center;
         display: flex;
         justify-content: center;
-        margin: 16px;
         position: relative;
 
-        @include lg {
-            margin: 0;
-        }
+
     }
 
     &__heading {
