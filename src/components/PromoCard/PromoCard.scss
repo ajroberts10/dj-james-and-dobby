@@ -68,17 +68,19 @@
         border: 3px solid black;
         color: black;
         display: block;
-        font-size: 1.5em;
+        font-size: 1em;
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
-        padding: 0.5em;
+        padding: 0.3em;
         position: relative;
         text-decoration: none;
         width: 250px;
 
         @include lg {
+            font-size: 1.5em;
             margin-top: 40px;
+            padding: 0.2em;
         }
     }
 }
