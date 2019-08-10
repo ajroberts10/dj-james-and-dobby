@@ -2,7 +2,7 @@
 
 .promoCard:before {
     background-attachment: fixed;
-    background-image: url('./dj.jpeg');
+    background-image: url('./dj-mobile.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,6 +14,10 @@
     position: absolute;
     top: 0;
     width: 100%;
+
+    @include md {
+        background-image: url('./dj.jpeg');
+    }
 }
 .promoCard {
     align-items: center;
