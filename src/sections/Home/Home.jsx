@@ -5,7 +5,7 @@ import './Home.scss';
 class Home extends Component {
     render() {
         return (
-            <section className="bg-light page-section" id="home">
+            <section className="page-section" id="home">
                 <div className="home">
                     <PromoCard />
                 </div>
