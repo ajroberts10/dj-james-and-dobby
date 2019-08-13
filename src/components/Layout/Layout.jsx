@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Sticky from 'react-stickynode';
 
 import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 
 import './Layout.scss';
 
@@ -14,6 +15,7 @@ class Layout extends Component {
                     <Navbar />
                 </Sticky>
                 { this.props.children }
+                <Footer />
             </div>
         );
     }

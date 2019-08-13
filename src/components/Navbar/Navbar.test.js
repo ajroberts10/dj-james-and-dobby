@@ -1,17 +1,17 @@
 
 import React from 'react';
-import { mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import Navbar from './Navbar';
 
 describe('the Navbar component', () => {
-    const wrapper = mount(<Navbar />);
+    const wrapper = shallow(<Navbar />);
 
     it('renders the Navbar', () => {
       expect(wrapper.find('.navbar').exists()).toEqual(true);
     });
 
     it('renders the 2 navbar links', () => {
-        expect(wrapper.find('.nav-item').length).toEqual(5);
+        expect(wrapper.find('.nav-item').length).toEqual(4);
     })
 });
 

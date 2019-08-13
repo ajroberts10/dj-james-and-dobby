@@ -33,7 +33,7 @@ describe('The PhotoGrid component', () => {
     const wrapper = mount(<PhotoGrid />);
 
     it('should render some photos', () => {
-        console.log(wrapper.debug());
+        // console.log(wrapper.debug());
         // expect(run).toHaveBeenCalledOnce();
     });
 })
