@@ -3,6 +3,7 @@ import Sticky from 'react-stickynode';
 
 import Navbar from '../components/Navbar/Navbar';
 import Jumbotron from '../sections/Home/Home';
+import DJs from '../sections/DJs/DJs';
 import Packages from '../sections/Packages/Packages';
 import Gallery from '../sections/Gallery/Gallery';
 import Downloads from '../sections/Downloads/Downloads';
@@ -20,6 +21,7 @@ class Home extends Component {
                 </Sticky>
                 <div className="App">
                   <Jumbotron />
+                  <DJs />
                   <Packages />
                   <Gallery />
                   <Downloads />

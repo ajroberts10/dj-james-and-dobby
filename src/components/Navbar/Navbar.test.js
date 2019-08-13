@@ -11,7 +11,7 @@ describe('the Navbar component', () => {
     });
 
     it('renders the 2 navbar links', () => {
-        expect(wrapper.find('.nav-item').length).toEqual(4);
+        expect(wrapper.find('.nav-item').length).toEqual(5);
     })
 });
 

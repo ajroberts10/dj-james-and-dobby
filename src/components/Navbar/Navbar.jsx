@@ -41,6 +41,20 @@ class Navbar extends Component {
                                 <Link
                                     className="nav-link"
                                     activeClass="active"
+                                    to="djs"
+                                    smooth={true}
+                                    offset={-48}
+                                    duration= {500}
+                                    data-toggle="collapse"
+                                    data-target=".navbar-collapse"
+                                >
+                                    DJs
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link
+                                    className="nav-link"
+                                    activeClass="active"
                                     to="packages"
                                     smooth={true}
                                     offset={-48}

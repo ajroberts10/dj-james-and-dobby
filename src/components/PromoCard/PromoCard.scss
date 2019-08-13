@@ -44,15 +44,17 @@
     }
 
     &__heading {
+        font-family: 'Bungee', cursive;
+
         font-size: 2em;
-        font-weight: bold;
+        // font-weight: bold;
         margin-top: 0;
         margin-bottom: 0.5em;
         position: relative;
         text-align: center;
 
         @include lg {
-            font-size: 5em;
+            font-size: 4em;
         }
     }
 
