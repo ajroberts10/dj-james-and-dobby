@@ -4,7 +4,7 @@ import './BioCard.scss';
 
 class BioCard extends Component {
     render() {
-        const { position } = this.props;
+        const { position, title, name, age, music } = this.props;
         return (
             <div className="container bioCard">
                 <div className="row">
@@ -21,14 +21,13 @@ class BioCard extends Component {
                     )}
                     <div className="col-md-6">
                         <div className="bioCard__content">
-                            <h1 className="bioCard__content-heading display-4">DJ James</h1>
+                            <h1 className="bioCard__content-heading display-4">{title}</h1>
                             <hr />
                             <p className="lead">Factfile:</p>
                             <ul>
-                                <li><b>Name: </b>DJ James</li>
-                                <li><b>Age: </b>36</li>
-                                <li><b>Likes to play: </b>Northen Soul, Motown, Disco, 80s, RnB, House, Garage, Hip Hop</li>
-
+                                <li><b>Name: </b>{name}</li>
+                                <li><b>Age: </b>{age}</li>
+                                <li><b>Likes to play: </b>{music}</li>
                             </ul>
                         </div>
                     </div>

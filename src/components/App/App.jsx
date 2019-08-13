@@ -4,6 +4,8 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
 import Index from '../../pages/Index';
 
+
+
 library.add(faStroopwafel)
 
 class App extends Component {
