@@ -7,7 +7,6 @@ class Jumbotron extends Component {
         return (
             <section className=" bg-light page-section" id="packages">
                 <div className="container packages">
-                    <h2 className="packages__title text-center display-5">Packages</h2>
                     <Carousel />
                 </div>
             </section>

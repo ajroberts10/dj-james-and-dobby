@@ -13,7 +13,9 @@ class Layout extends Component {
                 <Sticky enabled={true} innerZ={50}>
                     <Navbar />
                 </Sticky>
-                { this.props.children }
+                <div className="page">
+                    { this.props.children }
+                </div>
             </div>
         );
     }

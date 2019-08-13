@@ -23,7 +23,6 @@ class DJs extends Component {
         return (
             <section className="page-section" id="djs">
                 <div className="djs">
-                    <h2 className="djs__title text-center display-5">DJs</h2>
                     <div className="container">
                         <BioCard {...james} />
                         <BioCard {...dobby} />
