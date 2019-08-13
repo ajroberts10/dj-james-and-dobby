@@ -21,24 +21,22 @@ const dobby = {
 class DJs extends Component {
     render() {
         return (
-            <section className="page-section" id="djs">
-                <div className="djs">
-                    <div className="container">
-                        <BioCard {...james} />
-                        <BioCard {...dobby} />
-                        <div className="djs__about">
-                            <p>We first met almost 20 years ago, starting our DJ careers with an agency based in Wythenshawe.
-                            We started playing in nightclubs, bars and pubs over the South Manchester area.
-                            The life of a busy DJ is a lonely one and after starting families we decided to team up!
-                            </p>
-                            <p>
-                            Combining our wealth of experience, music knowledge, skillsets and production performance, we proved to be an instant hit at private events and functions.
-                            We have now performed at the majority of popular event venues across the North West of England, and built up a great rapport with venues, vendors and regular clients.
-                            </p>
-                        </div>
+            <div className="djs">
+                <div className="container">
+                    <BioCard {...james} />
+                    <BioCard {...dobby} />
+                    <div className="djs__about">
+                        <p>We first met almost 20 years ago, starting our DJ careers with an agency based in Wythenshawe.
+                        We started playing in nightclubs, bars and pubs over the South Manchester area.
+                        The life of a busy DJ is a lonely one and after starting families we decided to team up!
+                        </p>
+                        <p>
+                        Combining our wealth of experience, music knowledge, skillsets and production performance, we proved to be an instant hit at private events and functions.
+                        We have now performed at the majority of popular event venues across the North West of England, and built up a great rapport with venues, vendors and regular clients.
+                        </p>
                     </div>
                 </div>
-            </section>
+            </div>
         );
     }
 }

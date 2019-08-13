@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import DocumentListItem from '../../components/DocumentListItem/DocumentListItem';
-import './Downloads.scss';
 
 const title1 = 'Public Liability Insurance Certificate';
 const description1 = 'Click to download.';

@@ -5,11 +5,11 @@ import './Gallery.scss';
 class Gallery extends Component {
     render() {
         return (
-            <section className="page-section" id="gallery">
-                <div className="container gallery">
+            <div className="gallery">
+                <div className="container">
                     <PhotoGrid />
                 </div>
-            </section>
+            </div>
         );
     }
 }
