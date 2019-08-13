@@ -23,8 +23,7 @@ class BioCard extends Component {
                         <div className="bioCard__content">
                             <h1 className="bioCard__content-heading display-4">{title}</h1>
                             <hr />
-                            <p className="lead">Factfile:</p>
-                            <ul>
+                            <ul className="bioCard__content-list">
                                 <li><b>Name: </b>{name}</li>
                                 <li><b>Age: </b>{age}</li>
                                 <li><b>Likes to play: </b>{music}</li>
