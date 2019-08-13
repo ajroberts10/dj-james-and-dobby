@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from "react-scroll";
+import { NavLink } from 'react-router-dom';
 import './Navbar.scss';
 
 class Navbar extends Component {
@@ -7,16 +7,8 @@ class Navbar extends Component {
         return (
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container">
-                    <Link
-                        className="navbar-brand navbar__title"
-                        activeClass="active"
-                        to="home"
-                        smooth={true}
-                        offset={-48}
-                        duration= {500}
-                    >
-                        DJ James &amp; DJ Dobby
-                    </Link>
+                    <NavLink className="navbar-brand" to="/">DJ James &amp; DJ Dobby</NavLink>
+
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -24,75 +16,16 @@ class Navbar extends Component {
                     <div className="collapse navbar-collapse" id="navbarCollapse">
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item">
-                                <Link
-                                    className="nav-link"
-                                    activeClass="active"
-                                    to="home"
-                                    smooth={true}
-                                    offset={-48}
-                                    duration= {500}
-                                    data-toggle="collapse"
-                                    data-target=".navbar-collapse"
-                                >
-                                    Home
-                                </Link>
+                                <NavLink className="nav-link" to="/">Home</NavLink>
                             </li>
                             <li className="nav-item">
-                                <Link
-                                    className="nav-link"
-                                    activeClass="active"
-                                    to="djs"
-                                    smooth={true}
-                                    offset={-48}
-                                    duration= {500}
-                                    data-toggle="collapse"
-                                    data-target=".navbar-collapse"
-                                >
-                                    DJs
-                                </Link>
+                                <NavLink className="nav-link" to="/djs">DJs</NavLink>
                             </li>
                             <li className="nav-item">
-                                <Link
-                                    className="nav-link"
-                                    activeClass="active"
-                                    to="packages"
-                                    smooth={true}
-                                    offset={-48}
-                                    duration= {500}
-                                    data-toggle="collapse"
-                                    data-target=".navbar-collapse"
-                                >
-                                    Packages
-                                </Link>
+                                <NavLink className="nav-link" to="/packages">Packages</NavLink>
                             </li>
                             <li className="nav-item">
-                                <Link
-                                    className="nav-link"
-                                    activeClass="active"
-                                    to="gallery"
-                                    smooth={true}
-                                    offset={-48}
-                                    duration= {500}
-                                    data-toggle="collapse"
-                                    data-target=".navbar-collapse"
-                                >
-                                    Gallery
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link
-                                    className="nav-link"
-                                    activeClass="active"
-                                    to="downloads"
-                                    // spy={true}
-                                    smooth={true}
-                                    offset={-48}
-                                    duration= {500}
-                                    data-toggle="collapse"
-                                    data-target=".navbar-collapse"
-                                >
-                                    Downloads
-                                </Link>
+                                <NavLink className="nav-link" to="/gallery">Gallery</NavLink>
                             </li>
                         </ul>
                     </div>
