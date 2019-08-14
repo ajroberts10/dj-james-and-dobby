@@ -8,22 +8,22 @@ class Packages extends Component {
             <div className="packages">
                 <div class="container">
                     <div class="row">
-                        <div className="col-12 col-lg-4">
+                        <div className="col-12 col-lg-6">
                             <PackageCard />
                         </div>
-                        <div className="col-12 col-lg-4">
+                        <div className="col-12 col-lg-6">
                             <PackageCard />
                         </div>
-                        <div class="col-12 col-lg-4">
+                        <div class="col-12 col-lg-6">
                             <PackageCard />
                         </div>
-                        <div className="col-12 col-lg-4">
+                        <div className="col-12 col-lg-6">
                             <PackageCard />
                         </div>
-                        <div className="col-12 col-lg-4">
+                        <div className="col-12 col-lg-6">
                             <PackageCard />
                         </div>
-                        <div class="col-12 col-lg-4">
+                        <div class="col-12 col-lg-6">
                             <PackageCard />
                         </div>
                     </div>
