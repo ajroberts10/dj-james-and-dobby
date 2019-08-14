@@ -1,9 +1,9 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import Footer from './Footer';
+import PackageCard from './PackageCard';
 
-describe('The Footer component', () => {
-    const wrapper = mount(<Footer />);
+describe('The PackageCard component', () => {
+    const wrapper = mount(<PackageCard />);
     it('should successfully render', () => {
         expect(wrapper.exists()).toEqual(true);
     });

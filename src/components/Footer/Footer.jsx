@@ -25,7 +25,7 @@ class Footer extends Component {
                         </div>
                         <div className="col-md-3 footer-ns animated fadeInRight">
                             <h4>Contact</h4>
-                            <FontAwesomeIcon icon="phone" />   07712 345678
+                            07712 345678
 
                         </div>
                     </div>

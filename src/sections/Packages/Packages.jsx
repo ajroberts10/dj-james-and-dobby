@@ -1,17 +1,36 @@
 import React, { Component } from 'react';
-import Carousel from '../../components/Carousel/Carousel';
+import PackageCard from '../../components/PackageCard/PackageCard';
 import './Packages.scss';
 
-class Jumbotron extends Component {
+class Packages extends Component {
     render() {
         return (
             <div className="packages">
-                <div className="container">
-                    <Carousel />
+                <div class="container">
+                    <div class="row">
+                        <div className="col-12 col-lg-4">
+                            <PackageCard />
+                        </div>
+                        <div className="col-12 col-lg-4">
+                            <PackageCard />
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <PackageCard />
+                        </div>
+                        <div className="col-12 col-lg-4">
+                            <PackageCard />
+                        </div>
+                        <div className="col-12 col-lg-4">
+                            <PackageCard />
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <PackageCard />
+                        </div>
+                    </div>
                 </div>
             </div>
         );
     }
 }
 
-export default Jumbotron;
+export default Packages;
