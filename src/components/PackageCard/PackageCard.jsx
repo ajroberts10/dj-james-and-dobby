@@ -4,26 +4,42 @@ import './PackageCard.scss';
 
 class PackageCard extends Component {
     render() {
+        const { id, title, price, children } = this.props;
+        const href = `#${id}`;
         return (
             <div className="card packageCard">
                 <div className="packageCard__body">
-                    <img src="http://placehold.it/400x250/000/fff" className="card-img-top" alt="..." />
+                    <div id={id} className="carousel slide card-img-top" data-ride="carousel" data-interval="false">
+                        <div className="carousel-inner">
+                            <div className="carousel-item active">
+                            <img src="http://placehold.it/400x250/000/fff" className="d-block w-100" alt="..." />
+                            </div>
+                            <div className="carousel-item">
+                            <img src="http://placehold.it/400x250/000/fff" className="d-block w-100" alt="..." />
+                            </div>
+                            <div className="carousel-item">
+                            <img src="http://placehold.it/400x250/000/fff" className="d-block w-100" alt="..." />
+                            </div>
+                        </div>
+                        <a className="carousel-control-prev" href={href} role="button" data-slide="prev">
+                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span className="sr-only">Previous</span>
+                        </a>
+                        <a className="carousel-control-next" href={href} role="button" data-slide="next">
+                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span className="sr-only">Next</span>
+                        </a>
+                    </div>
+                    {/* <img src="http://placehold.it/400x250/000/fff" className="card-img-top" alt="..." /> */}
                     <div className="packageCard__content">
-                        <h4 className="packageCard__content-title display-4">Bronze Package</h4>
-                        <ul className="packageCard__content-body">
-                            <li>4.5hrs DJ Performance</li>
-                            <li>DJ booth</li>
-                            <li>2 speakers</li>
-                            <li>2 lights on podiums (choice of moving heads or rotospheres)</li>
-                            <li>Suitable for small venues and up to 100 guests</li>
-                            <li>Birthday parties, anniversaries, Christening/communion</li>
-                            <li>Set up time: 45mins</li>
-                            <li>Pack down time: 45mins</li>
-                        </ul>
+                        <h4 className="packageCard__content-title display-4">{title}</h4>
+                        <div className="packageCard__content-body">
+                            {children}
+                        </div>
                     </div>
                 </div>
-                <div class="card-footer">
-                    <p class="text-muted">£250</p>
+                <div className="card-footer">
+                    <p className="packageCard__price">£{price}</p>
                 </div>
             </div>
 

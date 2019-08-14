@@ -1,6 +1,9 @@
+@import '../../styles/mixins.scss';
+
 .packageCard {
-    padding: 0;
     margin-bottom: 24px;
+    padding: 0;
+
     &__body {
         padding: 16px;
     }
@@ -8,9 +11,21 @@
     &__content {
         margin-top: 24px;
 
+        &-body {
+            @include md {
+                height: 255px;
+            }
+        }
+
         &-title {
             font-size: 2em;
             margin-bottom: 16px;
         }
+    }
+
+    &__price {
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
     }
 }

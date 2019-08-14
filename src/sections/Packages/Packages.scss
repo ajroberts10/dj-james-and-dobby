@@ -1,5 +1,14 @@
 .packages {
     margin: 32px 0;
+
+    &__title {
+        font-weight: bold;
+        margin-bottom: 32px;
+    }
+
+    &__disclaimer {
+        margin-bottom: 24px;
+    }
 }
 
 
