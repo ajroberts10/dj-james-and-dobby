@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import PackageCard from '../../components/PackageCard/PackageCard';
 import './Packages.scss';
+import adons from './adons.json';
 
 class Packages extends Component {
     render() {
+        const tableWidth = { width: "80%" };
         return (
             <div className="packages">
                 <div class="container">
                     <h2 className="packages__title">Packages</h2>
                     <p className="packages__intro">
-                        We have a number of different packages that can be tailored to suit your event. Why not try combining one of the packages with some of our ad-ons to make your event extra special!
+                        We have a number of different packages that can be tailored to suit your event. Why not try combining one of the packages with some of our <a className="text-warning packages__adons-link" href="#adons">Ad-ons</a> to make your event extra special!
                     </p>
                     <p><small className="packages__disclaimer">
                         Note: Prices may vary depending on distance to venue and playing time
@@ -70,9 +72,28 @@ class Packages extends Component {
                             </PackageCard>
                         </div>
                     </div>
-                    <h2 className="packages__title">Ad-ons</h2>
-                    <div class="row">
-
+                    <div className="packages__adons">
+                        <h2 id="adons" className="packages__title">Ad-ons</h2>
+                        <table class="table">
+                            <caption>List of ad-ons</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col" style={tableWidth}>Item</th>
+                                    <th scope="col">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {adons.map((item) => (
+                                    <tr>
+                                        <td>{item.name}</td>
+                                        <td>{item.price.map((price) =>(
+                                            <p>{price.value} <small>{price.desc}</small></p>
+                                        ))}
+                                        </td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

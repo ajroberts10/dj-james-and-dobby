@@ -1,0 +1,103 @@
+[
+    {
+        "name": "UV Lighting",
+        "price": [
+        	{
+        		"value": "£20"
+        	}
+        ]
+    },
+    {
+        "name": "Balloon Modelling",
+        "price": [
+        	{
+        		"value": "£20",
+        		"desc": "up to 30 guests"
+        	}
+        ]
+    },
+    {
+        "name": "Smoke Machine/ Haze Machine",
+        "price": [
+        	{
+        		"value": "£20",
+        		"desc": "per unit"
+        	}
+        ]
+    },
+    {
+        "name": "Confetti Cannon",
+        "price": [
+        	{
+        		"value": "£25",
+        		"desc": "Party Confetti"
+        	},
+        	{
+        		"value": "£30",
+        		"desc": "UV Confetti"
+        	},
+        	{
+        		"value": "£40",
+        		"desc": "Mirror Confetti"
+        	}
+        ]
+    },
+    {
+        "name": "Bubble Machine",
+        "price": [
+        	{
+        		"value": "£25"
+        	}
+        ]
+    },
+    {
+        "name": "Snow Machine",
+        "price": [
+        	{
+        		"value": "£20"
+        	}
+        ]
+    },
+    {
+        "name": "Gobo Projector",
+        "price": [
+        	{
+        		"value": "£30",
+        		"desc": "Stock Gobo"
+        	},
+        	{
+        		"value": "£60",
+        		"desc": "Custom Gobo"
+        	}
+        ]
+    },
+    {
+        "name": "Custom DJ Boothj Image",
+        "price": [
+        	{
+        		"value": "£TBD"
+        	}
+        ]
+    },
+    {
+        "name": "Mood Lighting/ Uplighting Package",
+        "price": [
+        	{
+        		"value": "£10",
+        		"desc": "per unit (static)"
+        	},
+        	{
+        		"value": "£15",
+        		"desc": "per unit (programmed)"
+        	}
+        ]
+    },
+    {
+        "name": "Kareoke Performance Package",
+        "price": [
+        	{
+        		"value": "£50"
+        	}
+        ]
+    }
+]

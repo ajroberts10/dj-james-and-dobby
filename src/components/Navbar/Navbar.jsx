@@ -27,6 +27,9 @@ class Navbar extends Component {
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/gallery">Gallery</NavLink>
                             </li>
+                            <li className="nav-item">
+                                <a className="btn btn-primary btn-lg" href="#" role="button">Enquire Now</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
