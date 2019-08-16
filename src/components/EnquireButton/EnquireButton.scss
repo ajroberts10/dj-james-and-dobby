@@ -1,0 +1,25 @@
+@import '../../styles/mixins.scss';
+
+.enquireButton {
+    background-image: linear-gradient(to bottom right, rgb(255, 141, 42), purple);
+    border: 1px solid black;
+    color: white;
+    display: block;
+    font-size: 1em;
+    padding: 0.3em;
+    position: relative;
+    text-decoration: none;
+    width: 150px;
+}
+
+.large {
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.4em;
+    width:250px;
+
+    @include lg {
+        padding: 0.6em;
+    }
+}

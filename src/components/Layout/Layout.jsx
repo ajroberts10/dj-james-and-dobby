@@ -3,6 +3,7 @@ import Sticky from 'react-stickynode';
 
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
+import ContactModal from '../ContactModal/ContactModal';
 
 import './Layout.scss';
 
@@ -14,6 +15,7 @@ class Layout extends Component {
                 <Sticky enabled={true} innerZ={50}>
                     <Navbar />
                 </Sticky>
+                <ContactModal />
                 { this.props.children }
                 <Footer />
             </div>

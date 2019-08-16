@@ -11,7 +11,7 @@ class Packages extends Component {
                 <div class="container">
                     <h2 className="packages__title">Packages</h2>
                     <p className="packages__intro">
-                        We have a number of different packages that can be tailored to suit your event. Why not try combining one of the packages with some of our <a className="text-warning packages__adons-link" href="#adons">Ad-ons</a> to make your event extra special!
+                        We have a number of different packages that can be tailored to suit your event. Why not try combining one of the packages with some of our <a className="text-danger packages__adons-link" href="#adons">Ad-ons</a> to make your event extra special!
                     </p>
                     <p><small className="packages__disclaimer">
                         Note: Prices may vary depending on distance to venue and playing time

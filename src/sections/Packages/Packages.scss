@@ -10,17 +10,17 @@
         margin-bottom: 24px;
     }
 
-    & a {
-        color: purple !important;
-        font-weight: bold;
-    }
-
-    & a:hover {
-        color: orange !important;
-    }
-
     &__adons {
         margin-top: 40px;
+
+        &-link a {
+            color: purple !important;
+            font-weight: bold;
+        }
+
+        &-link a:hover {
+            color: orange !important;
+        }
     }
 }
 

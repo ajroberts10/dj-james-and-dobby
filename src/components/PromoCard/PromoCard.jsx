@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Logo from '../Logo/Logo';
+import EnquireButton from '../../components/EnquireButton/EnquireButton';
 import './PromoCard.scss';
 
 class PromoCard extends Component {
@@ -16,9 +17,9 @@ class PromoCard extends Component {
                                 <h1 className="promoCard__heading featurette-heading">Professional Event DJs</h1>
                                 <p className="lead promoCard__sub-heading">Private Functions | Large Scale Events | Festivals </p>
                                 <hr className="my-4" />
-                                <p className="lead">
-                                    <a className="btn btn-primary btn-lg" href="#" role="button">Enquire Now</a>
-                                </p>
+                                <div className="promoCard__button">
+                                    <EnquireButton size="large" />
+                                </div>
                             </div>
                         </div>
                     </div>

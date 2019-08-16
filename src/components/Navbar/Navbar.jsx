@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+
+import EnquireButton from '../../components/EnquireButton/EnquireButton';
 import './Navbar.scss';
 
 class Navbar extends Component {
@@ -19,7 +21,7 @@ class Navbar extends Component {
                                 <NavLink className="nav-link" to="/">Home</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/djs">DJs</NavLink>
+                                <NavLink className="nav-link" to="/djs">About Us</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/packages">Packages</NavLink>
@@ -27,8 +29,8 @@ class Navbar extends Component {
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/gallery">Gallery</NavLink>
                             </li>
-                            <li className="nav-item">
-                                <a className="btn btn-primary btn-lg" href="#" role="button">Enquire Now</a>
+                            <li className="nav-item nav-enquire">
+                                <EnquireButton />
                             </li>
                         </ul>
                     </div>

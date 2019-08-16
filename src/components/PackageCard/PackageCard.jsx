@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import EnquireButton from '../../components/EnquireButton/EnquireButton';
 import './PackageCard.scss';
 
 class PackageCard extends Component {
@@ -30,11 +31,13 @@ class PackageCard extends Component {
                             <span className="sr-only">Next</span>
                         </a>
                     </div>
-                    {/* <img src="http://placehold.it/400x250/000/fff" className="card-img-top" alt="..." /> */}
                     <div className="packageCard__content">
                         <h4 className="packageCard__content-title display-4">{title}</h4>
                         <div className="packageCard__content-body">
                             {children}
+                        </div>
+                        <div className="packageCard__enquire">
+                            <EnquireButton />
                         </div>
                     </div>
                 </div>

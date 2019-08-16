@@ -23,18 +23,10 @@ a {
     font-weight: 200;
 }
 
-.btn {
-    background-image: linear-gradient(to bottom right, rgb(255, 141, 42), purple);
-    border: 3px solid black;
-    color: black;
-    display: block;
-    font-size: 1em;
-    padding: 0.3em;
-    position: relative;
-    text-decoration: none;
-    width: 150px;
-
-    @include md {
-        margin-left: 24px;
+.nav-enquire {
+    margin-top: 2px;
+    @include lg {
+        margin-bottom: 0;
+        margin-left: 16px;
     }
 }

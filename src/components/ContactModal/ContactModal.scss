@@ -1,0 +1,38 @@
+@import '../../styles/mixins.scss';
+
+.modal-dialog {
+    @include lg {
+        max-width: 80%;
+    }
+}
+
+.modal-header {
+     background-color: black;
+     border: 0;
+     color: white;
+     .close {
+         color: white;
+     }
+}
+
+.modal-content {
+    background-image: linear-gradient(to bottom right, rgb(255, 141, 42), purple);
+    width: 100%;
+}
+
+.modal-footer {
+    background-color: black;
+    border: 0;
+}
+
+.modal-footer .btn {
+    background-image: linear-gradient(to bottom right, rgb(255, 141, 42), purple);
+    border: 1px solid black;
+    color: white;
+    display: block;
+    font-size: 1em;
+    padding: 0.3em;
+    position: relative;
+    text-decoration: none;
+    width: 150px;
+}
