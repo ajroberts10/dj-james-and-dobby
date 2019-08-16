@@ -16,6 +16,7 @@ class ContactModal extends Component {
                     </div>
                     <div className="modal-body">
                         <form name="contact" method="POST" data-netlify="true">
+                            <input type="hidden" name="form-name" value="contact" />
                             <div className="form-group">
                                 <label>Email address</label>
                                 <input type="email" name="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
