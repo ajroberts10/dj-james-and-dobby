@@ -11,10 +11,10 @@ const encode = (data) => {
 class ContactModal extends Component {
     constructor(props) {
         super(props);
-        this.state = { email: "", message: "" };
+        this.state = { email: '', message: '', packages: '' };
     }
 
-    handleSubmit = e => {
+    handleSubmit = event => {
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -23,14 +23,14 @@ class ContactModal extends Component {
           .then(() => alert("Success!"))
           .catch(error => alert(error));
 
-        e.preventDefault();
+        event.preventDefault();
     };
 
-    handleChange = e => this.setState({ [e.target.name]: e.target.value });
+    handleChange = event => this.setState({ [event.target.name]: event.target.value });
 
 
     render() {
-        const { email, message } = this.state;
+        const { email, message, packages } = this.state;
         return (
             <div className="modal fade" id="contactModal" tabIndex="-1" role="dialog" aria-labelledby="contactModalTitle" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -45,25 +45,40 @@ class ContactModal extends Component {
                         <form name="contact" method="POST" data-netlify="true">
                             <input type="hidden" name="form-name" value="contact" />
                             <div className="form-group">
-                                <label>Email address</label>
+                                <label>Your email address</label>
                                 <input
                                     type="email"
                                     name="email"
                                     value={email}
                                     onChange={this.handleChange}
                                     className="form-control"
-                                    id="exampleFormControlInput1"
+                                    id="email"
                                     placeholder="name@example.com"
                                 />
                             </div>
                             <div className="form-group">
-                                <label>Example textarea</label>
+                                <label>Which package are you interested in?</label>
+                                <select
+                                    id="packageSelect"
+                                    className="form-control"
+                                    value={packages}
+                                    onChange={this.handleChange}
+                                >
+                                    <option value="notSure">Not sure yet</option>
+                                    <option value="bronze">Bronze</option>
+                                    <option value="silver">Silver</option>
+                                    <option value="golg">Gold</option>
+                                    <option value="kids">Kids</option>
+                                </select>
+                            </div>
+                            <div className="form-group">
+                                <label>Message</label>
                                 <textarea
                                     name="message"
                                     value={message}
                                     onChange={this.handleChange}
                                     className="form-control"
-                                    id="exampleFormControlTextarea1"
+                                    id="message"
                                     rows="3"
                                 />
                             </div>
