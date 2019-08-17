@@ -11,7 +11,7 @@ const encode = (data) => {
 class ContactModal extends Component {
     constructor(props) {
         super(props);
-        this.state = { email: '', message: '', packages: '' };
+        this.state = { email: '', message: '', packageSelect: '' };
     }
 
     handleSubmit = event => {
@@ -30,7 +30,7 @@ class ContactModal extends Component {
 
 
     render() {
-        const { email, message, packages } = this.state;
+        const { email, message, packageSelect } = this.state;
         return (
             <div className="modal fade" id="contactModal" tabIndex="-1" role="dialog" aria-labelledby="contactModalTitle" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -62,7 +62,7 @@ class ContactModal extends Component {
                                     name="packageSelect"
                                     id="packageSelect"
                                     className="form-control"
-                                    value={packages}
+                                    value={packageSelect}
                                     onChange={this.handleChange}
                                 >
                                     <option value="notSure">Not sure yet</option>
