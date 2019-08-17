@@ -59,6 +59,7 @@ class ContactModal extends Component {
                             <div className="form-group">
                                 <label>Which package are you interested in?</label>
                                 <select
+                                    name="packageSelect"
                                     id="packageSelect"
                                     className="form-control"
                                     value={packages}
