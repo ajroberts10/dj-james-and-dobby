@@ -17,27 +17,12 @@ class ContactModal extends Component {
             email: '',
             message: '',
             packageSelect: '',
-            eventDate: new Date()
+            eventDate: new Date(),
+            startTime: new Date(),
+            endTime: new Date()
         };
     };
 
-    handleSubmit = event => {
-        const { eventDate } = this.state;
-
-        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-        const data = new FormData(event.target);
-        data.set('eventDate', data.get('eventDate').toLocaleDateString("en-US", options));
-
-        fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "contact", data })
-        })
-          .then(() => alert("Success!"))
-          .catch(error => alert(error));
-
-        event.preventDefault();
-    };
 
     handleChange = event => this.setState({ [event.target.name]: event.target.value });
 
@@ -47,9 +32,21 @@ class ContactModal extends Component {
         });
     }
 
+    handleStartTimeChange = time => {
+        this.setState({
+            startTime : time
+        });
+    }
+
+    handleEndTimeChange = time => {
+        this.setState({
+            endTime : time
+        });
+    }
+
 
     render() {
-        const { email, message, packageSelect, eventDate } = this.state;
+        const { email, message, packageSelect, eventDate} = this.state;
 
         return (
             <div className="modal fade" id="contactModal" tabIndex="-1" role="dialog" aria-labelledby="contactModalTitle" aria-hidden="true">
@@ -80,15 +77,14 @@ class ContactModal extends Component {
                                 <label>Event Date</label>
                                 <p>
                                     <DatePicker
-                                        placeholderText="Select your event date"
                                         name="eventDate"
                                         selected={eventDate}
                                         onChange={this.handleDateChange}
                                         dateFormat="dd/MM/yyyy"
                                         value={eventDate}
+                                        onFocus={(e) => e.target.readOnly = true}
                                     />
                                 </p>
-
                             </div>
                             <div className="form-group">
                                 <label>Which package are you interested in?</label>
@@ -117,10 +113,8 @@ class ContactModal extends Component {
                                     rows="3"
                                 />
                             </div>
-                            <div className="modal-footer">
-                        <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
                         <button type="submit" className="btn btn-primary">Submit</button>
-                    </div>
+                        <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
                         </form>
                     </div>
 
