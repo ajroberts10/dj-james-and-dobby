@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import DatePicker from "react-datepicker";
 
 import './ContactModal.scss';
+import "react-datepicker/dist/react-datepicker.css";
 
 const encode = (data) => {
     return Object.keys(data)
@@ -11,7 +13,12 @@ const encode = (data) => {
 class ContactModal extends Component {
     constructor(props) {
         super(props);
-        this.state = { email: '', message: '', packageSelect: '' };
+        this.state = {
+            email: '',
+            message: '',
+            packageSelect: '',
+            startDate: new Date()
+        };
     }
 
     handleSubmit = event => {
@@ -28,9 +35,15 @@ class ContactModal extends Component {
 
     handleChange = event => this.setState({ [event.target.name]: event.target.value });
 
+    handleDateChange = date => {
+        this.setState({
+          startDate: date
+        });
+    }
+
 
     render() {
-        const { email, message, packageSelect } = this.state;
+        const { email, message, packageSelect, startDate } = this.state;
         return (
             <div className="modal fade" id="contactModal" tabIndex="-1" role="dialog" aria-labelledby="contactModalTitle" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -57,6 +70,18 @@ class ContactModal extends Component {
                                 />
                             </div>
                             <div className="form-group">
+                                <label>Event Date</label>
+                                <p>
+                                    <DatePicker
+                                        name="eventDate"
+                                        selected={startDate}
+                                        onChange={this.handleDateChange}
+                                        dateFormat="dd/MM/yyyy"
+                                    />
+                                </p>
+
+                            </div>
+                            <div className="form-group">
                                 <label>Which package are you interested in?</label>
                                 <select
                                     name="packageSelect"
@@ -68,7 +93,7 @@ class ContactModal extends Component {
                                     <option value="notSure">Not sure yet</option>
                                     <option value="bronze">Bronze</option>
                                     <option value="silver">Silver</option>
-                                    <option value="golg">Gold</option>
+                                    <option value="gold">Gold</option>
                                     <option value="kids">Kids</option>
                                 </select>
                             </div>
