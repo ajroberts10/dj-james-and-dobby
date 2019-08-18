@@ -80,7 +80,7 @@ class ContactModal extends Component {
                                         selected={eventDate}
                                         onChange={this.handleDateChange}
                                         dateFormat="dd/MM/yyyy"
-                                        value={eventDate.toLocaleDateString("en-US", options)}
+                                        value={eventDate}
                                     />
                                 </p>
 
