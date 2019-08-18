@@ -17,7 +17,7 @@ class ContactModal extends Component {
             email: '',
             message: '',
             packageSelect: '',
-            startDate: new Date()
+            eventDate: new Date()
         };
     }
 
@@ -37,13 +37,13 @@ class ContactModal extends Component {
 
     handleDateChange = date => {
         this.setState({
-          startDate: date
+            eventDate: date
         });
     }
 
 
     render() {
-        const { email, message, packageSelect, startDate } = this.state;
+        const { email, message, packageSelect, eventDate } = this.state;
         return (
             <div className="modal fade" id="contactModal" tabIndex="-1" role="dialog" aria-labelledby="contactModalTitle" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -75,10 +75,10 @@ class ContactModal extends Component {
                                     <DatePicker
                                         placeholderText="Select your event date"
                                         name="eventDate"
-                                        selected={startDate}
+                                        selected={eventDate}
                                         onChange={this.handleDateChange}
                                         dateFormat="dd/MM/yyyy"
-                                        value={startDate}
+                                        value={eventDate}
                                     />
                                 </p>
 
