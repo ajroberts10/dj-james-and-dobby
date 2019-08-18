@@ -19,13 +19,19 @@ class ContactModal extends Component {
             packageSelect: '',
             eventDate: new Date()
         };
-    }
+    };
 
     handleSubmit = event => {
+        const { eventDate } = this.state;
+
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const data = new FormData(event.target);
+        data.set('eventDate', data.get('eventDate').toLocaleDateString("en-US", options));
+
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "contact", ...this.state })
+          body: encode({ "form-name": "contact", data })
         })
           .then(() => alert("Success!"))
           .catch(error => alert(error));
@@ -44,7 +50,6 @@ class ContactModal extends Component {
 
     render() {
         const { email, message, packageSelect, eventDate } = this.state;
-        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
         return (
             <div className="modal fade" id="contactModal" tabIndex="-1" role="dialog" aria-labelledby="contactModalTitle" aria-hidden="true">
@@ -57,7 +62,7 @@ class ContactModal extends Component {
                         </button>
                     </div>
                     <div className="modal-body">
-                        <form name="contact" method="POST" data-netlify="true">
+                        <form name="contact" method="POST" data-netlify="true" onSubmit={this.handleSubmit}>
                             <input type="hidden" name="form-name" value="contact" />
                             <div className="form-group">
                                 <label>Your email address</label>
@@ -112,12 +117,13 @@ class ContactModal extends Component {
                                     rows="3"
                                 />
                             </div>
+                            <div className="modal-footer">
+                        <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" className="btn btn-primary">Submit</button>
+                    </div>
                         </form>
                     </div>
-                    <div className="modal-footer">
-                        <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" className="btn btn-primary" onClick={this.handleSubmit}>Submit</button>
-                    </div>
+
                     </div>
                 </div>
             </div>
