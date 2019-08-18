@@ -44,6 +44,8 @@ class ContactModal extends Component {
 
     render() {
         const { email, message, packageSelect, eventDate } = this.state;
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
         return (
             <div className="modal fade" id="contactModal" tabIndex="-1" role="dialog" aria-labelledby="contactModalTitle" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -78,7 +80,7 @@ class ContactModal extends Component {
                                         selected={eventDate}
                                         onChange={this.handleDateChange}
                                         dateFormat="dd/MM/yyyy"
-                                        value={eventDate}
+                                        value={eventDate.toLocaleDateString("en-US", options)}
                                     />
                                 </p>
 
