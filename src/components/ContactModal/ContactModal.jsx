@@ -73,10 +73,12 @@ class ContactModal extends Component {
                                 <label>Event Date</label>
                                 <p>
                                     <DatePicker
+                                        placeholderText="Select your event date"
                                         name="eventDate"
                                         selected={startDate}
                                         onChange={this.handleDateChange}
                                         dateFormat="dd/MM/yyyy"
+                                        value={startDate}
                                     />
                                 </p>
 
