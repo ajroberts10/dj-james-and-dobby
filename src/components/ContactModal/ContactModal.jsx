@@ -3,8 +3,7 @@ import DatePicker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
 import './ContactModal.scss';
-import adOns from '../../sections/Packages/adons.json';
-
+import times from './times';
 class ContactModal extends Component {
     constructor(props) {
         super(props);
@@ -26,22 +25,14 @@ class ContactModal extends Component {
         this.setState({
             eventDate: date
         });
-    };
-
-    handleTimeChange = time => {
-        this.setState({
-            startTime: time
-        });
-    };
-
-    handleEndTimeChange = time => {
-        this.setState({
-            endTime: time
-        });
-    };
+    }
 
     render() {
         const { email, message, packageSelect, startTime, endTime, eventDate} = this.state;
+
+        const timeOptions = times.map((time) => (
+            <option value={time}>{time}</option>
+        ));
 
         return (
             <div className="modal fade" id="contactModal" tabIndex="-1" role="dialog" aria-labelledby="contactModalTitle" aria-hidden="true">
@@ -79,38 +70,6 @@ class ContactModal extends Component {
                                             value={eventDate}
                                             onFocus={(e) => e.target.readOnly = true}
                                         />
-                                    </p>
-                                </div>
-                                <div className="form-group">
-                                    <label>Event Start Time</label>
-                                    <p>
-                                    <DatePicker
-                                        selected={startTime}
-                                        value={startTime}
-                                        onChange={this.handleTimeChange}
-                                        showTimeSelect
-                                        showTimeSelectOnly
-                                        timeIntervals={30}
-                                        timeFormat="HH:mm"
-                                        dateFormat="HH:mm"
-                                        timeCaption="Start Time"
-                                    />
-                                    </p>
-                                </div>
-                                <div className="form-group">
-                                    <label>Event End Time</label>
-                                    <p>
-                                    <DatePicker
-                                        selected={endTime}
-                                        value={endTime}
-                                        onChange={this.handleEndTimeChange}
-                                        showTimeSelect
-                                        showTimeSelectOnly
-                                        timeIntervals={30}
-                                        timeFormat="HH:mm"
-                                        dateFormat="HH:mm"
-                                        timeCaption="End Time"
-                                    />
                                     </p>
                                 </div>
                                 <div className="form-group">
