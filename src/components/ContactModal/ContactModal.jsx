@@ -13,9 +13,9 @@ class ContactModal extends Component {
             message: '',
             packageSelect: '',
             adonSelect: '',
-            eventDate: new Date(),
-            startTime: new Date(),
-            endTime: new Date()
+            eventDate: '',
+            startTime: '',
+            endTime: ''
         };
     };
 
@@ -26,10 +26,22 @@ class ContactModal extends Component {
         this.setState({
             eventDate: date
         });
-    }
+    };
+
+    handleTimeChange = time => {
+        this.setState({
+            startTime: time
+        });
+    };
+
+    handleEndTimeChange = time => {
+        this.setState({
+            endTime: time
+        });
+    };
 
     render() {
-        const { email, message, packageSelect, adonSelect, eventDate} = this.state;
+        const { email, message, packageSelect, startTime, endTime, eventDate} = this.state;
 
         return (
             <div className="modal fade" id="contactModal" tabIndex="-1" role="dialog" aria-labelledby="contactModalTitle" aria-hidden="true">
@@ -70,6 +82,38 @@ class ContactModal extends Component {
                                     </p>
                                 </div>
                                 <div className="form-group">
+                                    <label>Event Start Time</label>
+                                    <p>
+                                    <DatePicker
+                                        selected={startTime}
+                                        value={startTime}
+                                        onChange={this.handleTimeChange}
+                                        showTimeSelect
+                                        showTimeSelectOnly
+                                        timeIntervals={30}
+                                        timeFormat="HH:mm"
+                                        dateFormat="HH:mm"
+                                        timeCaption="Start Time"
+                                    />
+                                    </p>
+                                </div>
+                                <div className="form-group">
+                                    <label>Event End Time</label>
+                                    <p>
+                                    <DatePicker
+                                        selected={endTime}
+                                        value={endTime}
+                                        onChange={this.handleEndTimeChange}
+                                        showTimeSelect
+                                        showTimeSelectOnly
+                                        timeIntervals={30}
+                                        timeFormat="HH:mm"
+                                        dateFormat="HH:mm"
+                                        timeCaption="End Time"
+                                    />
+                                    </p>
+                                </div>
+                                <div className="form-group">
                                     <label>Which package are you interested in?</label>
                                     <select
                                         name="packageSelect"
@@ -83,21 +127,6 @@ class ContactModal extends Component {
                                         <option value="silver">Silver</option>
                                         <option value="gold">Gold</option>
                                         <option value="kids">Kids</option>
-                                    </select>
-                                </div>
-                                <div className="form-group">
-                                    <label>Which ad-ons are you interested in?</label>
-                                    <select
-                                        name="adonSelect"
-                                        id="adonSelect"
-                                        className="form-control"
-                                        value={adonSelect}
-                                        onChange={this.handleChange}
-                                    >
-                                        <option value="notSure">Not sure yet</option>
-                                        {adOns.map((item) => (
-                                           <option value={item.name}>{item.name}</option>
-                                        ))}
                                     </select>
                                 </div>
                                 <div className="form-group">

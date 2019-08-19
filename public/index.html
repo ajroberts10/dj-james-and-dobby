@@ -34,6 +34,8 @@
     <form name="contact" netlify netlify-honeypot="bot-field" hidden>
         <input type="email" name="email" />
         <input type="text" name="eventDate">
+        <input type="text" name="startTime">
+        <input type="text" name="endTime">
         <select name="packageSelect">
             <option value="notSure">Not sure yet</option>
             <option value="bronze">Bronze</option>
@@ -41,8 +43,8 @@
             <option value="golg">Gold</option>
             <option value="kids">Kids</option>
         </select>
-        <select name="adonSelect">
-            </select>
+        <select multiple name="adonSelect">
+        </select>
         <textarea name="message"></textarea>
     </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
