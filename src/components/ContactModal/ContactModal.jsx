@@ -16,7 +16,8 @@ class ContactModal extends Component {
             startTime: '',
             endTime: '',
             contactNumber: '',
-            fullName: ''
+            fullName: '',
+            venue: ''
         };
     };
 
@@ -30,7 +31,7 @@ class ContactModal extends Component {
     }
 
     render() {
-        const { email, message, packageSelect, startTime, endTime, eventDate, contactNumber, fullName} = this.state;
+        const { email, message, packageSelect, startTime, endTime, eventDate, contactNumber, fullName, venue} = this.state;
 
         return (
             <div className="modal fade" id="contactModal" tabIndex="-1" role="dialog" aria-labelledby="contactModalTitle" aria-hidden="true">
@@ -94,6 +95,18 @@ class ContactModal extends Component {
                                             required
                                         />
                                     </p>
+                                </div>
+                                <div className="form-group">
+                                    <label>Event venue *</label>
+                                    <input
+                                        type="text"
+                                        name="venue"
+                                        value={venue}
+                                        onChange={this.handleChange}
+                                        className="form-control"
+                                        id="venue"
+                                        required
+                                    />
                                 </div>
                                 <div className="form-group">
                                     <label>Event Start Time</label>
