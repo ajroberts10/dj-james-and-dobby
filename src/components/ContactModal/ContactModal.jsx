@@ -14,7 +14,9 @@ class ContactModal extends Component {
             adonSelect: '',
             eventDate: '',
             startTime: '',
-            endTime: ''
+            endTime: '',
+            contactNumber: '',
+            fullName: ''
         };
     };
 
@@ -28,11 +30,7 @@ class ContactModal extends Component {
     }
 
     render() {
-        const { email, message, packageSelect, startTime, endTime, eventDate} = this.state;
-
-        const timeOptions = times.map((time) => (
-            <option value={time}>{time}</option>
-        ));
+        const { email, message, packageSelect, startTime, endTime, eventDate, contactNumber, fullName} = this.state;
 
         return (
             <div className="modal fade" id="contactModal" tabIndex="-1" role="dialog" aria-labelledby="contactModalTitle" aria-hidden="true">
@@ -48,7 +46,7 @@ class ContactModal extends Component {
                             <form name="contact" method="POST" data-netlify="true" onSubmit={this.handleSubmit}>
                                 <input type="hidden" name="form-name" value="contact" />
                                 <div className="form-group">
-                                    <label>Your email address</label>
+                                    <label>Your email address *</label>
                                     <input
                                         type="email"
                                         name="email"
@@ -57,10 +55,34 @@ class ContactModal extends Component {
                                         className="form-control"
                                         id="email"
                                         placeholder="name@example.com"
+                                        required
                                     />
                                 </div>
                                 <div className="form-group">
-                                    <label>Event Date</label>
+                                    <label>Your contact number</label>
+                                    <input
+                                        type="tel"
+                                        name="contactNumber"
+                                        value={contactNumber}
+                                        onChange={this.handleChange}
+                                        className="form-control"
+                                        id="contactNumber"
+                                    />
+                                </div>
+                                <div className="form-group">
+                                    <label>Your full name *</label>
+                                    <input
+                                        type="text"
+                                        name="fullName"
+                                        value={fullName}
+                                        onChange={this.handleChange}
+                                        className="form-control"
+                                        id="fullName"
+                                        required
+                                    />
+                                </div>
+                                <div className="form-group">
+                                    <label>Event date *</label>
                                     <p>
                                         <DatePicker
                                             name="eventDate"
@@ -69,7 +91,32 @@ class ContactModal extends Component {
                                             dateFormat="dd/MM/yyyy"
                                             value={eventDate}
                                             onFocus={(e) => e.target.readOnly = true}
+                                            required
                                         />
+                                    </p>
+                                </div>
+                                <div className="form-group">
+                                    <label>Event Start Time</label>
+                                    <p>
+                                        <input
+                                            type="time"
+                                            id="startTime"
+                                            name="startTime"
+                                            value={startTime}
+                                            onChange={this.handleChange}>
+                                        </input>
+                                    </p>
+                                </div>
+                                <div className="form-group">
+                                    <label>Event End Time</label>
+                                    <p>
+                                        <input
+                                            type="time"
+                                            id="endTime"
+                                            name="endTime"
+                                            value={endTime}
+                                            onChange={this.handleChange}>
+                                        </input>
                                     </p>
                                 </div>
                                 <div className="form-group">
@@ -89,7 +136,7 @@ class ContactModal extends Component {
                                     </select>
                                 </div>
                                 <div className="form-group">
-                                    <label>Message</label>
+                                    <label>Message *</label>
                                     <textarea
                                         name="message"
                                         value={message}
@@ -97,11 +144,13 @@ class ContactModal extends Component {
                                         className="form-control"
                                         id="message"
                                         rows="3"
+                                        required
                                     />
                                 </div>
                             <button type="submit" className="btn btn-primary">Submit</button>
                             <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
                             </form>
+                            <small><i>* Required fields</i></small>
                         </div>
                     </div>
                 </div>
