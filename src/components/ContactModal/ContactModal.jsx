@@ -157,6 +157,7 @@ class ContactModal extends Component {
                                         className="form-control"
                                         id="message"
                                         rows="3"
+                                        placeholder="tell us more about your event"
                                         required
                                     />
                                 </div>
