@@ -7,7 +7,6 @@ import './Footer.scss';
 class Footer extends Component {
     render() {
         return (
-            <div className="footer">
                 <footer className="footer-bs">
                     <div className="row">
                         <div className="col-md-6 footer-brand animated fadeInLeft">
@@ -30,8 +29,6 @@ class Footer extends Component {
                         </div>
                     </div>
                 </footer>
-
-            </div>
         )
     }
 

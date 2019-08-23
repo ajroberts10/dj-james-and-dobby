@@ -84,7 +84,7 @@ class ContactModal extends Component {
                                 </div>
                                 <div className="form-group">
                                     <label>Event date *</label>
-                                    <p>
+                                    <span>
                                         <DatePicker
                                             name="eventDate"
                                             selected={eventDate}
@@ -94,7 +94,7 @@ class ContactModal extends Component {
                                             onFocus={(e) => e.target.readOnly = true}
                                             required
                                         />
-                                    </p>
+                                    </span>
                                 </div>
                                 <div className="form-group">
                                     <label>Event venue *</label>
