@@ -8,7 +8,8 @@ const props = {
     title: 'DJ James',
     name: 'James Watt',
     age: '36',
-    music: 'Northen Soul, Notown, Disco, 80s, RnB, House, Garage, Hip Hop'
+    music: 'Northen Soul, Notown, Disco, 80s, RnB, House, Garage, Hip Hop',
+    image: 'james.png'
 }
 
 storiesOf('Biocard', module)

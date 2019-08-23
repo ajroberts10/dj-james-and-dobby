@@ -29,7 +29,7 @@
     text-align: center;
     width: 100vw;
 
-    @include lg {
+    @include md {
         margin: 0;
         height: 100vh;
     }

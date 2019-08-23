@@ -4,7 +4,7 @@ import './BioCard.scss';
 
 class BioCard extends Component {
     render() {
-        const { position, title, name, age, music } = this.props;
+        const { position, title, name, age, music, image } = this.props;
         return (
             <div className="container bioCard">
                 <div className="row">
@@ -13,7 +13,7 @@ class BioCard extends Component {
                             <div className="row">
                                 <div className="col-md-12">
                                     <div className="bioCard__image">
-                                        <img src="https://image.ibb.co/f5Kehq/bio-image.jpg" alt="image" />
+                                        <img src={require(`./${image}`)} alt="image" />
                                     </div>
                                 </div>
                             </div>
@@ -24,7 +24,7 @@ class BioCard extends Component {
                             <div className="row">
                                 <div className="col-md-12">
                                     <div className="bioCard__image">
-                                        <img src="https://image.ibb.co/f5Kehq/bio-image.jpg" alt="image" />
+                                        <img src={require(`./${image}`)} alt="image" />
                                     </div>
                                 </div>
                             </div>
@@ -46,7 +46,7 @@ class BioCard extends Component {
                             <div className="row">
                                 <div className="col-md-12">
                                     <div className="bioCard__image">
-                                        <img src="https://image.ibb.co/f5Kehq/bio-image.jpg" alt="image" />
+                                        <img src={require(`./${image}`)} alt="image" />
                                     </div>
                                 </div>
                             </div>

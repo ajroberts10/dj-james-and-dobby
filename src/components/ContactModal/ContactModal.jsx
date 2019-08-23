@@ -3,7 +3,7 @@ import DatePicker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
 import './ContactModal.scss';
-import times from './times';
+
 class ContactModal extends Component {
     constructor(props) {
         super(props);
