@@ -22,18 +22,24 @@ class PromoCard extends Component {
                             <div className="promoCard__content-header">
                                 <h1 className="promoCard__heading featurette-heading">Professional Event DJs</h1>
                                 <p className="lead promoCard__sub-heading">Private Functions | Large Scale Events | Festivals </p>
-                                <hr className="my-4" />
-                                <div className="promoCard__button">
+                                {/* <hr className="my-4" /> */}
+                                {/* <div className="promoCard__button">
                                     <EnquireButton size="large" />
-                                </div>
+                                </div> */}
                             </div>
                         </div>
 
 
                     </div>
+
                     <div className="row">
                         <div className="col-12">
-                            <QuoteCarousel quotes={quotes} />
+                            <div className="button-row">
+                                <EnquireButton size="large" />
+                                <EnquireButton size="large" />
+                                <EnquireButton size="large" />
+                            </div>
+                            {/* <QuoteCarousel quotes={quotes} /> */}
                         </div>
                     </div>
                 </div>
