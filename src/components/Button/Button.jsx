@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 
+import './Button.scss';
+
 class Button extends Component {
     render() {
-        const { text, buttonClass } = this.props;
+        const { text, buttonClass, link } = this.props;
         const classes = `button btn ${buttonClass}`;
         return (
-            <button className={classes}>{text}</button>
+            <a className={classes} href={link}>{text}</a>
         )
     }
 };

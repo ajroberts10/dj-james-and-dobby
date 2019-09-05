@@ -6,6 +6,7 @@ import HomePage from '../../pages/HomePage';
 import DJPage from '../../pages/DJPage';
 import PackagesPage from '../../pages/PackagesPage';
 import GalleryPage from '../../pages/GalleryPage';
+import KidsPage from '../../pages/KidsPage';
 
 library.add(faQuoteLeft);
 library.add(faQuoteRight);
@@ -19,6 +20,7 @@ class App extends Component {
             <Route path="/djs" component={DJPage} />
             <Route path="/packages" component={PackagesPage} />
             <Route path="/gallery" component={GalleryPage} />
+            <Route path="/packages/kids" component={KidsPage} />
           </div>
         </Router>
     );

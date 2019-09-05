@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Logo from '../Logo/Logo';
-import EnquireButton from '../../components/EnquireButton/EnquireButton';
+import Button from '../../components/Button/Button';
 import QuoteCarousel from '../QuoteCarousel/QuoteCarousel';
 import quotes from './quotes';
 import './PromoCard.scss';
@@ -35,9 +35,9 @@ class PromoCard extends Component {
                     <div className="row">
                         <div className="col-12">
                             <div className="button-row">
-                                <EnquireButton size="large" />
-                                <EnquireButton size="large" />
-                                <EnquireButton size="large" />
+                                <Button text="Kids Parties" link="/packages/kids" buttonClass="button--kids"/>
+                                <Button text="Weddings" link="/packages" buttonClass="button--weddings"/>
+                                <Button text="Private Functions" link="/packages"/>
                             </div>
                             {/* <QuoteCarousel quotes={quotes} /> */}
                         </div>

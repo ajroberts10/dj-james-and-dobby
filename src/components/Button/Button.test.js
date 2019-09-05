@@ -24,4 +24,11 @@ describe('the Button component', () => {
             expect(wrapper.hasClass('test_class')).toEqual(true);
         });
     });
+
+    describe('passing a link prop', () => {
+        const wrapper = shallow(<Button link="/packages" />);
+        it('should apply the correct href', () => {
+            expect(wrapper.prop('href')).toEqual('/packages');
+        });
+    });
 });

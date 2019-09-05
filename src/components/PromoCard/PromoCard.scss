@@ -79,8 +79,12 @@
     position: relative;
 }
 
-.button-row button {
+.button-row a {
     display: inline-block;
-    margin: 40px 16px;
+    margin: 16px 16px;
+
+    @include lg {
+        margin: 40px 16px;
+    }
 }
 

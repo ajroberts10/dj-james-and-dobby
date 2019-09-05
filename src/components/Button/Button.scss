@@ -14,4 +14,14 @@
     @include lg {
         padding: 0.6em;
     }
+
+    &--kids {
+        font-family: 'Baloo', cursive;
+        font-size: 1.5em;
+    }
+
+    &--weddings {
+        font-family: 'Petit Formal Script', cursive;
+        font-weight: bold;
+    }
 }
