@@ -84,7 +84,7 @@ class ContactModal extends Component {
                                 </div>
                                 <div className="form-group">
                                     <label>Event date *</label>
-                                    <span>
+                                    <span className="contactModal__date">
                                         <DatePicker
                                             name="eventDate"
                                             selected={eventDate}
