@@ -25,12 +25,12 @@ class HomeButtons extends Component {
                                     alt="Card image cap"
                                 />
                                 <div className="card-body">
-                                    <p className="card-text">
-                                        <Button href="/packages/kids" buttonText="View Kids Party Options" />
+                                    <p className="card-text homeButtons__card-text">
+                                        From £180
                                     </p>
                                 </div>
                                 <div className="card-footer">
-                                    <p>From £180</p>
+                                    <Button href="/packages/kids" buttonText="View Kids Party Options" />
                                 </div>
                             </div>
                         </div>
@@ -43,13 +43,12 @@ class HomeButtons extends Component {
                                     alt="Card image cap"
                                 />
                                 <div className="card-body">
-                                    <p className="card-text">
-                                        <Button href="/packages" buttonText="View Kids Party Options" />
-
+                                    <p className="card-text homeButtons__card-text">
+                                        From £250
                                     </p>
                                 </div>
                                 <div className="card-footer">
-                                    <p>From £250</p>
+                                    <Button href="/packages" buttonText="View Kids Party Options" />
                                 </div>
                             </div>
                         </div>
@@ -62,13 +61,12 @@ class HomeButtons extends Component {
                                     alt="Card image cap"
                                 />
                                 <div className="card-body">
-                                    <p className="card-text">
-                                        <Button href="/packages" buttonText="View Kids Party Options" />
-
+                                    <p className="card-text homeButtons__card-text">
+                                        From £250
                                     </p>
                                 </div>
-                                <div className="card-footer">
-                                    <p>From £250</p>
+                                <div className="card-footer homeButtons_card-footer">
+                                    <Button href="/packages" buttonText="View Kids Party Options" />
                                 </div>
                             </div>
                         </div>

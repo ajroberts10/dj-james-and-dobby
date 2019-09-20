@@ -9,7 +9,7 @@
     padding: 24px;
     text-align: center;
 
-    @include md {
+    @include lg {
         height: 100vh;
     }
 
@@ -22,7 +22,7 @@
         margin-bottom: 16px;
 
         @include lg {
-            height: 500px;
+            height: 400px;
         }
 
         & a {
@@ -31,12 +31,12 @@
             color: black;
         }
 
-        & a:hover, :focus {
-            background-color: black;
-        }
-
         &-image {
             height: 180px;
+        }
+
+        &-text {
+            font-size: 1.5em;
         }
     }
 

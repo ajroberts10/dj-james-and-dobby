@@ -37,13 +37,6 @@ class PromoCard extends Component {
                                 >
                                     Find Out More <span style={style}>&#128071;</span>
                                 </Link>
-                                {/* <button
-                                    className="btn btn-primary btn-lg promoCard__button"
-                                    href="#homeButtons"
-                                    role="button"
-                                >
-                                    Find Out More <span style={style}>&#128071;</span>
-                                </button> */}
                             </div>
                         </div>
                     </div>
