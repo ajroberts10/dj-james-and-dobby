@@ -18,12 +18,8 @@
         background-color: black;
         border: solid white 4px;
         color: white;
-        height: 450px;
+        height: 400px;
         margin-bottom: 16px;
-
-        @include lg {
-            height: 400px;
-        }
 
         & a {
             background-image: linear-gradient(to bottom right, rgb(255, 141, 42), purple);
