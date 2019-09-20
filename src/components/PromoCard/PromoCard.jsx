@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-scroll'
 
 import Logo from '../Logo/Logo';
-import Button from '../../components/Button/Button';
 import QuoteCarousel from '../QuoteCarousel/QuoteCarousel';
 import quotes from './quotes';
 import './PromoCard.scss';
+
+const style = {
+    'fontSize': '20px'
+};
 
 class PromoCard extends Component {
     render() {
@@ -21,25 +24,27 @@ class PromoCard extends Component {
                         <div className="col-sm-12 col-md-12 col-lg-6 promoCard__content">
                             <div className="promoCard__content-header">
                                 <h1 className="promoCard__heading featurette-heading">Professional Event DJs</h1>
-                                <p className="lead promoCard__sub-heading">Private Functions | Large Scale Events | Festivals </p>
-                                {/* <hr className="my-4" /> */}
-                                {/* <div className="promoCard__button">
-                                    <EnquireButton size="large" />
-                                </div> */}
+                                <hr className="my-4" />
+                                <QuoteCarousel quotes={quotes} />
+                                <Link
+                                    activeClass="active"
+                                    className="btn btn-primary btn-lg promoCard__button"
+                                    to="homeButtons"
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                    offset={-40}
+                                >
+                                    Find Out More <span style={style}>&#128071;</span>
+                                </Link>
+                                {/* <button
+                                    className="btn btn-primary btn-lg promoCard__button"
+                                    href="#homeButtons"
+                                    role="button"
+                                >
+                                    Find Out More <span style={style}>&#128071;</span>
+                                </button> */}
                             </div>
-                        </div>
-
-
-                    </div>
-
-                    <div className="row">
-                        <div className="col-12">
-                            <div className="button-row">
-                                <Button text="Kids Parties" link="/packages/kids" buttonClass="button--kids"/>
-                                <Button text="Weddings" link="/packages" buttonClass="button--weddings"/>
-                                <Button text="Private Functions" link="/packages"/>
-                            </div>
-                            {/* <QuoteCarousel quotes={quotes} /> */}
                         </div>
                     </div>
                 </div>

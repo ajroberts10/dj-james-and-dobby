@@ -18,9 +18,9 @@ class App extends Component {
           <div>
             <Route exact path="/" component={HomePage} />
             <Route path="/djs" component={DJPage} />
-            <Route path="/packages" component={PackagesPage} />
-            <Route path="/gallery" component={GalleryPage} />
+            <Route exact path="/packages" component={PackagesPage} />
             <Route path="/packages/kids" component={KidsPage} />
+            <Route path="/gallery" component={GalleryPage} />
           </div>
         </Router>
     );

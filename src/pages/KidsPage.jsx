@@ -7,7 +7,6 @@ class PackagesPage extends Component {
     render() {
         return (
             <Layout>
-                <Packages />
             </Layout>
         );
     }

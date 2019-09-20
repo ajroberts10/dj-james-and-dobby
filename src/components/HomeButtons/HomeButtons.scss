@@ -1,0 +1,54 @@
+
+@import '../../styles/mixins.scss';
+
+.homeButtons {
+    align-items: center;
+    display: flex;
+    background-image: linear-gradient(to bottom right, rgb(255, 141, 42), purple);
+    border-top: solid black 2px;
+    padding: 24px;
+    text-align: center;
+
+    @include md {
+        height: 100vh;
+    }
+
+
+    &__card {
+        background-color: black;
+        border: solid white 4px;
+        color: white;
+        height: 450px;
+        margin-bottom: 16px;
+
+        @include lg {
+            height: 500px;
+        }
+
+        & a {
+            background-image: linear-gradient(to bottom right, rgb(255, 141, 42), purple);
+            border: 1px solid black;
+            color: black;
+        }
+
+        & a:hover, :focus {
+            background-color: black;
+        }
+
+        &-image {
+            height: 180px;
+        }
+    }
+
+    &__title {
+        font-size: 1.8em;
+        &--kids {
+            font-family: 'Baloo', cursive;
+        }
+
+        &--weddings {
+            font-family: 'Petit Formal Script', cursive;
+            font-weight: bold;
+        }
+    }
+}

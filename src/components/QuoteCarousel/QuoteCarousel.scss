@@ -2,20 +2,23 @@
 
 
 .quoteCarousel {
-    height: 200px;
-    margin: 36px auto;
+    height: 100px;
     text-align: center;
     width: 100%;
 
     @include lg {
-        width: 50%;
+        width: 100%;
     }
 
     &__quote {
-        font-size: 1.4em;
+        font-size: 1.2em;
         font-style: italic;
         display: inline-block;
         vertical-align: middle;
         line-height: normal;
+
+        @include lg {
+            font-size: 1.5em;
+        }
     }
 }
