@@ -5,22 +5,21 @@ import './PackageCard.scss';
 
 class PackageCard extends Component {
     render() {
-        const { id, title, price, children } = this.props;
+        const { id, title, price, children, packageImages } = this.props;
         const href = `#${id}`;
         return (
             <div className="card packageCard">
                 <div className="packageCard__body">
                     <div id={id} className="carousel slide card-img-top" data-ride="carousel" data-interval="false">
                         <div className="carousel-inner">
-                            <div className="carousel-item active">
-                            <img src="http://placehold.it/400x250/000/fff" className="d-block w-100" alt="..." />
-                            </div>
-                            <div className="carousel-item">
-                            <img src="http://placehold.it/400x250/000/fff" className="d-block w-100" alt="..." />
-                            </div>
-                            <div className="carousel-item">
-                            <img src="http://placehold.it/400x250/000/fff" className="d-block w-100" alt="..." />
-                            </div>
+                            {packageImages && packageImages.map((url, index) => {
+                                const classes = index === 0 ? 'carousel-item active' : 'carousel-item';
+                                return (
+                                    <div key={index} className={classes}>
+                                        <img src={url} className="d-block w-100" alt="..." />
+                                    </div>
+                                )
+                            })}
                         </div>
                         <a className="carousel-control-prev" href={href} role="button" data-slide="prev">
                             <span className="carousel-control-prev-icon" aria-hidden="true"></span>

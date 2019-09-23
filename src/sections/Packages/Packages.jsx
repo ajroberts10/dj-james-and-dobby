@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PackageCard from '../../components/PackageCard/PackageCard';
 import './Packages.scss';
 import adons from './adons.json';
+import { bronze, silver, gold } from '../../components/PackageCard/images';
 
 class Packages extends Component {
     render() {
@@ -18,7 +19,7 @@ class Packages extends Component {
                     </small></p>
                     <div class="row">
                         <div className="col-12 col-lg-6">
-                            <PackageCard id="bronze" title="Bronze Package" price="250">
+                            <PackageCard id="bronze" title="Bronze Package" price="250" packageImages={bronze}>
                                 <ul>
                                     <li>4.5hrs DJ Performance</li>
                                     <li>DJ booth</li>
@@ -32,7 +33,7 @@ class Packages extends Component {
                             </PackageCard>
                         </div>
                         <div className="col-12 col-lg-6">
-                            <PackageCard id="silver" title="Silver Package" price="275">
+                            <PackageCard id="silver" title="Silver Package" price="275" packageImages={silver}>
                                 <ul>
                                     <li>4.5hrs DJ Performance</li>
                                     <li>DJ booth</li>
@@ -46,7 +47,7 @@ class Packages extends Component {
                             </PackageCard>
                         </div>
                         <div class="col-12 col-lg-6">
-                            <PackageCard id="gold" title="Gold Package" price="350">
+                            <PackageCard id="gold" title="Gold Package" price="350" packageImages={gold}>
                                 <ul>
                                     <li>4.5hrs DJ Performance</li>
                                     <li>DJ booth</li>
@@ -60,7 +61,7 @@ class Packages extends Component {
                             </PackageCard>
                         </div>
                         <div className="col-12 col-lg-6">
-                            <PackageCard id="kids" title="Kids Parties" price="180">
+                            <PackageCard id="kids" title="Kids Parties" price="180" packageImages={bronze}>
                                 <ul>
                                     <li>Up to 3hrs DJ Performance</li>
                                     <li>DJ booth</li>
