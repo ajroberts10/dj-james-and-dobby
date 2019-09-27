@@ -14,13 +14,6 @@ describe('The PackageCard component', () => {
         expect(wrapper.exists()).toEqual(true);
     });
 
-    describe('Setting the title prop', () => {
-        const wrapper = mount(<PackageCard title="Bronze Package" />)
-        it('should render the title', () => {
-            expect(wrapper.find('.packageCard__content-title').text()).toEqual('Bronze Package');
-        });
-    });
-
     describe('Setting the price prop', () => {
         const wrapper = mount(<PackageCard price="250" />)
         it('should render the price', () => {

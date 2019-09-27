@@ -4,12 +4,13 @@
     background-image: linear-gradient(to bottom right, rgb(255, 141, 42), purple);
     border: 1px solid black;
     color: white;
-    display: block;
-    font-size: 1.5em;
-    padding: 0.4em;
+    display: inline-block;
+    font-size: 1em;
+    margin: 16px;
+    padding: 0.3em;
     position: relative;
     text-decoration: none;
-    width: 250px;
+    width: 200px;
 
     @include lg {
         padding: 0.6em;

@@ -7,7 +7,7 @@ class Button extends Component {
         const { text, buttonClass, link } = this.props;
         const classes = `button btn ${buttonClass}`;
         return (
-            <a className={classes} href={link}>{text}</a>
+            <a className={classes} href={link} data-toggle="collapse">{text}</a>
         )
     }
 };

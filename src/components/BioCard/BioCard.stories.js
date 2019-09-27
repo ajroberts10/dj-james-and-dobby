@@ -9,7 +9,7 @@ const props = {
     name: 'James Watt',
     age: '36',
     music: 'Northen Soul, Notown, Disco, 80s, RnB, House, Garage, Hip Hop',
-    image: 'james.png'
+    image: 'icon_james.jpg'
 }
 
 storiesOf('Biocard', module)
