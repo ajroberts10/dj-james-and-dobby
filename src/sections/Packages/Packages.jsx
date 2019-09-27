@@ -33,7 +33,7 @@ class Packages extends Component {
                         </PackageCard>
                     </MenuItem>
                     <MenuItem text="Silver Package" id="silver">
-                        <PackageCard id="silver" title="Silver Package" price="275" packageImages={silver}>
+                        <PackageCard id="silver-images" title="Silver Package" price="275" packageImages={silver}>
                             <ul>
                                 <li>4.5hrs DJ Performance</li>
                                 <li>DJ booth</li>
@@ -47,7 +47,7 @@ class Packages extends Component {
                         </PackageCard>
                     </MenuItem>
                     <MenuItem text="Gold Package" id="gold">
-                        <PackageCard id="gold" title="Gold Package" price="350" packageImages={gold}>
+                        <PackageCard id="gold-images" title="Gold Package" price="350" packageImages={gold}>
                             <ul>
                                 <li>4.5hrs DJ Performance</li>
                                 <li>DJ booth</li>
