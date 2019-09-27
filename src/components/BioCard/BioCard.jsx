@@ -35,7 +35,6 @@ class BioCard extends Component {
                             <h1 className="bioCard__content-heading display-4">{title}</h1>
                             <hr />
                             <ul className="bioCard__content-list">
-                                <li><span className="bioCard__content-list-title">Name: </span>{name}</li>
                                 <li><span className="bioCard__content-list-title">Age: </span>{age}</li>
                                 <li><span className="bioCard__content-list-title">Likes to play: </span>{music}</li>
                             </ul>

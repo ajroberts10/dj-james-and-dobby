@@ -8,7 +8,7 @@ const james = {
     name: 'James Watt',
     age: '36',
     music: 'Northen Soul, Notown, Disco, 80s, RnB, House, Garage, Hip Hop',
-    image: 'james.png'
+    image: 'icon_james.jpg'
 }
 
 const dobby = {
@@ -17,7 +17,7 @@ const dobby = {
     name: 'James Chappell Steele',
     age: '35',
     music: 'Pop, 90s RnB, Garage, Dance, Cheese, Party Anthems',
-    image: 'dobby.png'
+    image: 'icon_dobby.jpg'
 }
 
 class DJs extends Component {
