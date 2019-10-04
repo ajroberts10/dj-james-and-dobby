@@ -56,7 +56,7 @@ class kids extends Component {
                             <div className="kids__video col-sm-12 col-lg-6">
                                 <div class="video">
                                     <video
-                                        src="https://res.cloudinary.com/musicandcolour/video/upload/v1570220017/kids/File_from_iOS_2.mp4"
+                                        src="https://res.cloudinary.com/musicandcolour/video/upload/v1570219031/kids/File_from_iOS_1.mp4"
                                         frameborder="0"
                                         allowfullscreen
                                         controls
