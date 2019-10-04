@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 
 import Layout from '../components/Layout/Layout';
-import Packages from '../sections/Packages/Packages';
+import Kids from '../sections/Kids/Kids';
 
 class PackagesPage extends Component {
     render() {
         return (
             <Layout>
+                <Kids />
             </Layout>
         );
     }
