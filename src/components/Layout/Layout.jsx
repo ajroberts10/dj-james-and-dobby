@@ -6,6 +6,7 @@ import Footer from '../Footer/Footer';
 import ContactModal from '../ContactModal/ContactModal';
 
 import './Layout.scss';
+const year = new Date().getFullYear();
 
 class Layout extends Component {
     render() {
@@ -17,7 +18,7 @@ class Layout extends Component {
                 </Sticky>
                 <ContactModal />
                 { this.props.children }
-                <Footer />
+                <Footer year={year} />
             </div>
         );
     }

@@ -5,5 +5,5 @@ import Footer from './Footer';
 import './Footer.scss';
 
 storiesOf('Footer', module)
-    .add('default', () => <Footer />);
+    .add('default', () => <Footer year="2019" />);
 

@@ -1,6 +1,6 @@
 .footer-bs {
     background-color: black;
-	padding: 60px 40px;
+	padding: 20px 40px;
 	color: rgba(255,255,255,1.00);
 	border-bottom-right-radius: 6px;
 	border-top-left-radius: 0px;
@@ -14,20 +14,23 @@
 .footer-bs .footer-brand p { font-size:12px; color:rgba(255,255,255,0.70); }
 
 .footer-bs .footer-social ul { list-style:none; padding:0px; }
+.footer-bs .footer-ns ul { list-style:none; padding:0px; margin-bottom: 32px; }
 .footer-bs .footer-social h4 {
 	font-size: 11px;
 	text-transform: uppercase;
-	letter-spacing: 3px;
+    letter-spacing: 3px;
+    margin-top: 8px;
 }
 .footer-bs .footer-social li { padding:5px 4px;}
+.footer-bs .footer-ns li { padding:5px 4px;}
 .footer-bs .footer-social a { color:rgba(255,255,255,1.00);}
-.footer-bs .footer-social a:hover { color:rgba(255,255,255,0.80); text-decoration:none; }
+.footer-bs .footer-social a:hover { color:orange !important; text-decoration:none; cursor: pointer; }
 
 .footer-bs .footer-ns h4 {
 	font-size: 11px;
 	text-transform: uppercase;
 	letter-spacing: 3px;
-	margin-bottom:10px;
+    margin-top: 8px;
 }
 .footer-bs .footer-ns p { font-size:12px; color:rgba(255,255,255,0.70); }
 
