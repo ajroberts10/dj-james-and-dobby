@@ -48,7 +48,7 @@ class HomeButtons extends Component {
                                     </p>
                                 </div>
                                 <div className="card-footer">
-                                    <Button href="/packages" buttonText="View Kids Party Options" />
+                                    <Button href="/packages" buttonText="View Wedding Packages" />
                                 </div>
                             </div>
                         </div>
@@ -66,7 +66,7 @@ class HomeButtons extends Component {
                                     </p>
                                 </div>
                                 <div className="card-footer homeButtons_card-footer">
-                                    <Button href="/packages" buttonText="View Kids Party Options" />
+                                    <Button href="/packages" buttonText="View Birthday Packages" />
                                 </div>
                             </div>
                         </div>

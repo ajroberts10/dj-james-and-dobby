@@ -13,7 +13,7 @@ class Packages extends Component {
                 <div class="container">
                     <h1 className="packages__title">Packages</h1>
                     <p className="packages__intro">
-                        We have a number of different packages that can be tailored to suit your event. Why not try combining one of the packages with some of our <a className="text-danger packages__adons-link" href="#adons">Ad-ons</a> to make your event extra special!
+                        We have a number of different packages that can be tailored to suit your event. Why not try combining one of the packages with some of our ad-ons to make your event extra special!
                     </p>
                     <p><small className="packages__disclaimer">
                         Note: Prices may vary depending on distance to venue and playing time
@@ -82,33 +82,6 @@ class Packages extends Component {
                             </tbody>
                         </table>
                     </MenuItem>
-
-
-                    {/* <div class="row"> */}
-
-                        {/* <div className="col-12 col-lg-6">
-
-                        </div> */}
-                        {/* <div className="col-12 col-lg-6">
-
-                        </div> */}
-                        {/* <div class="col-12 col-lg-6">
-
-                        </div> */}
-                        {/* <div className="col-12 col-lg-6">
-                            <PackageCard id="kids" title="Kids Parties" price="180" packageImages={bronze}>
-                                <ul>
-                                    <li>Up to 3hrs DJ Performance</li>
-                                    <li>DJ booth</li>
-                                    <li>2 speakers</li>
-                                    <li>Age appropriate playlist</li>
-                                    <li>Classic party games</li>
-                                    <li>Participation dances</li>
-                                </ul>
-                            </PackageCard>
-                        </div> */}
-                    {/* </div> */}
-
                 </div>
             </div>
         );
