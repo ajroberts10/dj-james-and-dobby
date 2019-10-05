@@ -14,8 +14,7 @@ class kids extends Component {
                     <h1 className="kids__title">Kids Parties</h1>
                     <p className="kids__intro">
                         We have a number of different packages that can be
-                        tailored to suit your event. Why not try combining one
-                        of the kids with some of our ad-ons to make your event
+                        tailored to suit your event. Why not try combining our kids party package with some of our ad-ons to make your event
                         extra special!
                     </p>
                     <p>
@@ -37,6 +36,8 @@ class kids extends Component {
                             <li>Classic party games</li>
                             <li>Participation dances</li>
                         </ul>
+                        <p>Why not try combining our kids party package with some of our fantastic <a className="kids__link" href="/packages">ad-ons</a>
+                        </p>
                     </PackageCard>
                     <div class="container">
                         <div className="row">

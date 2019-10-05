@@ -17,6 +17,18 @@ class PackageCard extends Component {
                             data-ride="carousel"
                             data-interval="false"
                         >
+                            <ol class="carousel-indicators">
+                            {packageImages &&
+                                    packageImages.map((url, index) => {
+                                        const olClasses =
+                                            index === 0
+                                                ? "active"
+                                                : "";
+                                        return (
+                                            <li data-target={href} data-slide-to={index} className={olClasses}></li>
+                                        );
+                                    })}
+                            </ol>
                             <div className="carousel-inner">
                                 {packageImages &&
                                     packageImages.map((url, index) => {

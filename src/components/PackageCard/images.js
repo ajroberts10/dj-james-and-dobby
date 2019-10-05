@@ -31,10 +31,10 @@ export const gold = [
 ]
 
 export const kidsParty = [
+    "https://res.cloudinary.com/musicandcolour/image/upload/c_lfill,h_335,w_503/v1570214772/kids/4.jpg",
     "https://res.cloudinary.com/musicandcolour/image/upload/c_lfill,h_335,w_503/v1570214772/kids/1.jpg",
     "https://res.cloudinary.com/musicandcolour/image/upload/c_lfill,h_335,w_503/v1570214772/kids/2.jpg",
     "https://res.cloudinary.com/musicandcolour/image/upload/c_lfill,h_335,w_503/v1570214772/kids/3.jpg",
-    "https://res.cloudinary.com/musicandcolour/image/upload/c_lfill,h_335,w_503/v1570214772/kids/4.jpg",
     "https://res.cloudinary.com/musicandcolour/image/upload/c_lfill,h_335,w_503/v1570214772/kids/5.jpg",
     "https://res.cloudinary.com/musicandcolour/image/upload/c_lfill,h_335,w_503/v1570214772/kids/6.jpg",
     "https://res.cloudinary.com/musicandcolour/image/upload/c_lfill,h_335,w_503/v1570214772/kids/7.jpg",

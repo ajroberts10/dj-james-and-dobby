@@ -7,6 +7,7 @@ import DJPage from '../../pages/DJPage';
 import PackagesPage from '../../pages/PackagesPage';
 import GalleryPage from '../../pages/GalleryPage';
 import KidsPage from '../../pages/KidsPage';
+import FAQsPage from '../../pages/FAQsPage';
 
 library.add(faQuoteLeft);
 library.add(faQuoteRight);
@@ -21,6 +22,7 @@ class App extends Component {
             <Route exact path="/packages" component={PackagesPage} />
             <Route path="/packages/kids" component={KidsPage} />
             <Route path="/gallery" component={GalleryPage} />
+            <Route path="/faqs" component={FAQsPage} />
           </div>
         </Router>
     );
