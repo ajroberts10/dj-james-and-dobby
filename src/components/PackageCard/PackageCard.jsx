@@ -17,7 +17,7 @@ class PackageCard extends Component {
                             data-ride="carousel"
                             data-interval="false"
                         >
-                            <ol class="carousel-indicators">
+                            <ol className="carousel-indicators">
                             {packageImages &&
                                     packageImages.map((url, index) => {
                                         const olClasses =
@@ -25,7 +25,7 @@ class PackageCard extends Component {
                                                 ? "active"
                                                 : "";
                                         return (
-                                            <li data-target={href} data-slide-to={index} className={olClasses}></li>
+                                            <li key={index} data-target={href} data-slide-to={index} className={olClasses}></li>
                                         );
                                     })}
                             </ol>
