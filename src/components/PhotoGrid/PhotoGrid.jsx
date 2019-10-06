@@ -9,7 +9,7 @@ const feed = new Instafeed({
     resolution: 'low_resolution',
     sortBy: 'most-recent',
     limit: 12,
-    template: '<a class="photoGrid__item" href="{{link}}" target="_blank"><img src="{{image}}" /><div class="photoGrid__likes">&hearts; {{likes}}</div></a>',
+    template: '<a class="photoGrid__item" href="{{link}}" target="_blank"><img src="{{image}}" /></a>',
 });
 
 class PhotoGrid extends Component {
