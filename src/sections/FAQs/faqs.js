@@ -24,10 +24,6 @@ const faqs = [
         answer: "Yes of course! We typically have 1 wireless mic just for us, and 2 wireless mics for you! Any speeches, Karaoke etc we got you covered!"
     },
     {
-        question: "Do you have microphones?",
-        answer: "Yes of course! We typically have 1 wireless mic just for us, and 2 wireless mics for you! Any speeches, Karaoke etc we got you covered!"
-    },
-    {
         question: "I've never planned a party before and i don't know what to do!",
         answer: "Luckily we have! Feel free to ask us anything, we want your event to be a total success and are willing to help and advise anyway we can. We have met and become friends with many vendor services from Photobooths to Dancefloors, Caterers and Event Planners"
     },

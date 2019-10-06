@@ -31,7 +31,7 @@ class Home extends Component {
                             {item.answer}
                         </MenuItem>
                     )})}
-                    <small>Please note; we may take a few photo's and videos at your event for our social media accounts. We will present them to you via messenger platforms and request permission to use them first</small>
+                    <small>Please note; we may take a few photos and videos at your event for our social media accounts. We will present them to you via messenger platforms and request permission to use them first</small>
 
 
 
