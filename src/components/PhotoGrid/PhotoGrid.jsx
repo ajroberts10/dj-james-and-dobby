@@ -20,7 +20,7 @@ class PhotoGrid extends Component {
         return (
             <div className="photoGrid">
                 <div className="container">
-                    <div id="instafeed"></div>
+                    <div className="photoGrid__instafeed" id="instafeed"></div>
                 </div>
             </div>
         );
