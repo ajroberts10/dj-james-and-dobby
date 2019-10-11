@@ -6,6 +6,33 @@
         margin-bottom: 32px;
     }
 
+    &__steps {
+        margin: 32px 0;
+
+        &-text {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__link {
+        font-family: 'Baloo', cursive;
+        margin-bottom: 32px;
+        background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px black;
+        color: transparent;
+        width: 250px;
+    }
+
+    &__icon {
+        color: violet;
+        margin-left: 16px;
+        height: 24px;
+        width: 24px;
+    }
+
     &__disclaimer {
         margin-bottom: 24px;
     }
@@ -25,6 +52,10 @@
 
     &__table th {
         border-top: none;
+    }
+
+    h2 {
+        margin-bottom: 24px;
     }
 }
 

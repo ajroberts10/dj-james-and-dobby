@@ -15,6 +15,7 @@ class HomeButtons extends Component {
         return (
             <div className="homeButtons" name="homeButtons">
                 <div className="container">
+                    <h3 className="homeButtons__section-title">Select an option below to browse packages</h3>
                     <div className="row homeButtons__columns">
                         <div className="col-sm-12 col-md-6 col-lg-4">
                             <div className="card homeButtons__card">
@@ -29,7 +30,7 @@ class HomeButtons extends Component {
                                         From £180
                                     </p>
                                 </div>
-                                <div className="card-footer">
+                                <div className="card-footer homeButtons__card-footer">
                                     <Button href="/packages/kids" buttonText="View Kids Party Options" />
                                 </div>
                             </div>
@@ -47,7 +48,7 @@ class HomeButtons extends Component {
                                         From £250
                                     </p>
                                 </div>
-                                <div className="card-footer">
+                                <div className="card-footer homeButtons__card-footer">
                                     <Button href="/packages" buttonText="View Wedding Packages" />
                                 </div>
                             </div>
@@ -65,7 +66,7 @@ class HomeButtons extends Component {
                                         From £250
                                     </p>
                                 </div>
-                                <div className="card-footer homeButtons_card-footer">
+                                <div className="card-footer homeButtons__card-footer">
                                     <Button href="/packages" buttonText="View Birthday Packages" />
                                 </div>
                             </div>

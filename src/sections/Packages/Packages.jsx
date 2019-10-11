@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import PackageCard from '../../components/PackageCard/PackageCard';
 import MenuItem from '../../components/MenuItem/MenuItem';
 import './Packages.scss';
@@ -13,11 +16,13 @@ class Packages extends Component {
                 <div class="container">
                     <h1 className="packages__title">Packages</h1>
                     <p className="packages__intro">
-                        We have a number of different packages that can be tailored to suit your event. Why not try combining one of the packages with some of our ad-ons to make your event extra special!
+                        We have a number of different packages that can be tailored to suit your event.
                     </p>
-                    <p><small className="packages__disclaimer">
-                        Note: Prices may vary depending on distance to venue and playing time
-                    </small></p>
+                    <h3 className="packages__steps">Step 1:</h3>
+                    <p className="packages__steps-text">Identify which package would be suitable for your event. When selecting a package, it's worth thinking about the size of the venue for your event and the number of guests you will be expecting. If you're not sure which would fit best, please feel free to get in touch to discuss the details.</p>
+
+                    <h2><a className="packages__link" href="/packages/kids">Kid's Parties <FontAwesomeIcon className="packages__icon" icon={faChevronRight} /></a></h2>
+
                     <MenuItem text="Bronze Package" id="bronze">
                         <PackageCard id="bronze-images" title="Bronze Package" price="250" packageImages={bronze}>
                             <ul>
@@ -60,6 +65,12 @@ class Packages extends Component {
                             </ul>
                         </PackageCard>
                     </MenuItem>
+
+
+
+                    <h3 className="packages__steps">Step 2:</h3>
+                    <p className="packages__steps-text">Make your event extra special by selecting one or more of our package ad-ons. </p>
+
                     <MenuItem text="Ad-ons" id="adons">
                         <table class="table packages__table">
                             <caption>List of ad-ons</caption>
@@ -82,6 +93,9 @@ class Packages extends Component {
                             </tbody>
                         </table>
                     </MenuItem>
+                    <small className="packages__disclaimer">
+                        Note: Prices may vary depending on distance to venue and playing time
+                    </small>
                 </div>
             </div>
         );

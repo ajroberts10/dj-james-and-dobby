@@ -40,28 +40,38 @@ class kids extends Component {
                         </p>
                     </PackageCard>
                     <div class="container">
-                        <div className="row">
-                            <div className="col-12 text-center">
-                                <h1 className="kids__sub-title">Videos</h1>
-                            </div>
-                            <div className="kids__video col-sm-12 col-lg-6">
-                                <div className="video">
-                                    <video
-                                        src="https://res.cloudinary.com/musicandcolour/video/upload/v1570217127/kids/File_from_iOS.mp4"
-                                        frameborder="0"
-                                        allowfullscreen
-                                        controls
-                                    ></video>
+                        <div className="col-12 text-center">
+                            <h1 className="kids__sub-title">Videos</h1>
+                        </div>
+                        <div className="row homeButtons__columns">
+                            <div className="col-sm-12 col-md-12 col-lg-6">
+                                <div className="card">
+                                    <div className="card-header">Christmas Events</div>
+                                    <div className="card-body">
+                                        <div class="video">
+                                            <video
+                                                src="https://res.cloudinary.com/musicandcolour/video/upload/v1570217127/kids/File_from_iOS.mp4"
+                                                frameborder="0"
+                                                allowfullscreen
+                                                controls
+                                            ></video>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="kids__video col-sm-12 col-lg-6">
-                                <div class="video">
-                                    <video
-                                        src="https://res.cloudinary.com/musicandcolour/video/upload/v1570219031/kids/File_from_iOS_1.mp4"
-                                        frameborder="0"
-                                        allowfullscreen
-                                        controls
-                                    ></video>
+                            <div className="col-sm-12 col-md-12 col-lg-6">
+                                <div className="card">
+                                    <div className="card-header">Customsed Sound & Lighting</div>
+                                    <div className="card-body">
+                                        <div class="video">
+                                            <video
+                                                src="https://res.cloudinary.com/musicandcolour/video/upload/v1570219031/kids/File_from_iOS_1.mp4"
+                                                frameborder="0"
+                                                allowfullscreen
+                                                controls
+                                            ></video>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

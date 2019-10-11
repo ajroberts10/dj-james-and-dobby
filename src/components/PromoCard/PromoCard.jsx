@@ -14,12 +14,10 @@ class PromoCard extends Component {
     render() {
         return (
             <div className="promoCard jumbotron jumbotron-fluid">
-                <div className="container">
+                <div className="container promoCard__container">
                     <div className="row">
                         <div className="col-sm-12 col-md-12 col-lg-6">
-
                             <Logo />
-
                         </div>
                         <div className="col-sm-12 col-md-12 col-lg-6 promoCard__content">
                             <div className="promoCard__content-header">

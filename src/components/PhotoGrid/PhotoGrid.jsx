@@ -19,7 +19,9 @@ class PhotoGrid extends Component {
     render() {
         return (
             <div className="photoGrid">
-                <div id="instafeed"></div>
+                <div className="container">
+                    <div id="instafeed"></div>
+                </div>
             </div>
         );
     }

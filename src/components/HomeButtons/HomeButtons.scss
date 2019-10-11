@@ -13,6 +13,10 @@
         height: 100vh;
     }
 
+    &__section-title {
+        margin-bottom: 32px;
+    }
+
 
     &__card {
         background-color: black;
@@ -33,6 +37,10 @@
 
         &-text {
             font-size: 1.5em;
+        }
+
+        &-footer {
+            margin-bottom: 16px;
         }
     }
 

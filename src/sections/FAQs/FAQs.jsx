@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import MenuItem from "../../components/MenuItem/MenuItem";
 import "./FAQs.scss";
-import faqs from "./faqs";
+import faqItems from "./faqItems";
 
 class Home extends Component {
     render() {
@@ -30,7 +30,7 @@ class Home extends Component {
                             </div>
                         </div>
                     </div>
-                    {faqs.map((item, index) => {
+                    {faqItems.map((item, index) => {
                         const id = `item-${index}`;
                         return (
                             <MenuItem text={item.question} id={id}>
