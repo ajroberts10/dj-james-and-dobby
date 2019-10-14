@@ -6,10 +6,10 @@ const feed = new Instafeed({
     get: 'user',
     userId: process.env.REACT_APP_INSTA_USER_ID,
     accessToken: process.env.REACT_APP_INSTA_ACCESS_TOKEN,
-    resolution: 'low_resolution',
+    resolution: 'standard_resolution',
     sortBy: 'most-recent',
     limit: 12,
-    template: '<a class="photoGrid__item" href="{{link}}" target="_blank"><img src="{{image}}" /></a>',
+    template: '<div class="col-lg-3 gallery instaimg"><a href="{{image}}" target="_blank"><img src="{{image}}" class="img-fluid" /></a></div>',
 });
 
 class PhotoGrid extends Component {
@@ -20,7 +20,7 @@ class PhotoGrid extends Component {
         return (
             <div className="photoGrid">
                 <div className="container">
-                    <div className="photoGrid__instafeed" id="instafeed"></div>
+                    <div className="row" id="instafeed"></div>
                 </div>
             </div>
         );

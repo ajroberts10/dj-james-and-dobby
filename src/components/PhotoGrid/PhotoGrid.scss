@@ -1,15 +1,9 @@
-.photoGrid {
-    &__item {
-        border:1px solid #e1e1e1;
-        border-radius: 4px;
-        display:inline-block;
-        margin:10px;
-        padding:5px 5px 1px 5px;
-        position:relative;
-        text-align: center;
-    }
+.instaimg img {
+    margin-bottom: 30px;
+}
 
-    &__instafeed {
-        text-align: center;
-    }
+.instaimg img:hover {
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    -webkit-opacity: 0.8;
 }
