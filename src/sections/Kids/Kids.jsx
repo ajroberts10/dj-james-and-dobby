@@ -45,7 +45,7 @@ class kids extends Component {
                         </div>
                         <div className="row homeButtons__columns">
                             <div className="col-sm-12 col-md-12 col-lg-6">
-                                <div className="card">
+                                <div className="card kids__card">
                                     <div className="card-header">Christmas Events</div>
                                     <div className="card-body">
                                         <div class="video">
@@ -60,7 +60,7 @@ class kids extends Component {
                                 </div>
                             </div>
                             <div className="col-sm-12 col-md-12 col-lg-6">
-                                <div className="card">
+                                <div className="card kids__card">
                                     <div className="card-header">Customsed Sound & Lighting</div>
                                     <div className="card-body">
                                         <div class="video">
