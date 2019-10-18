@@ -112,10 +112,11 @@ class ContactModal extends Component {
                                     <label>Event Start Time</label>
                                     <p>
                                         <input
+                                            className="contactModal__time"
                                             type="time"
                                             id="startTime"
                                             name="startTime"
-                                            value={startTime}
+                                            value={startTime || "19:00"}
                                             onChange={this.handleChange}>
                                         </input>
                                     </p>
@@ -124,10 +125,11 @@ class ContactModal extends Component {
                                     <label>Event End Time</label>
                                     <p>
                                         <input
+                                            className="contactModal__time"
                                             type="time"
                                             id="endTime"
                                             name="endTime"
-                                            value={endTime}
+                                            value={endTime || "00:00"}
                                             onChange={this.handleChange}>
                                         </input>
                                     </p>
