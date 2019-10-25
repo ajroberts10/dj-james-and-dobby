@@ -4,7 +4,7 @@ import MenuItem from "../../components/MenuItem/MenuItem";
 import "./FAQs.scss";
 import faqItems from "./faqItems";
 
-class Home extends Component {
+class FAQs extends Component {
     render() {
         return (
             <div className="faqs">
@@ -50,4 +50,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default FAQs;

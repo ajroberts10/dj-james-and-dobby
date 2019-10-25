@@ -32,6 +32,9 @@ class Navbar extends Component {
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/faqs">FAQs</NavLink>
                             </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" to="/friends">Friends</NavLink>
+                            </li>
                             <li className="nav-item nav-enquire">
                                 <EnquireButton />
                             </li>

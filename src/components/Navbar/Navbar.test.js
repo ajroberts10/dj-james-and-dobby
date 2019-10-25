@@ -10,8 +10,8 @@ describe('the Navbar component', () => {
       expect(wrapper.find('.navbar').exists()).toEqual(true);
     });
 
-    it('renders the 2 navbar links', () => {
-        expect(wrapper.find('.nav-item').length).toEqual(6);
+    it('renders the 7 navbar links', () => {
+        expect(wrapper.find('.nav-item').length).toEqual(7);
     })
 });
 

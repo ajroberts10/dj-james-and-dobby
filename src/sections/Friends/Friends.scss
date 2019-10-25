@@ -1,0 +1,76 @@
+@import "../../styles/mixins.scss";
+
+.friends {
+    font-size: 20px;
+    margin: 32px 0;
+
+    &__title {
+        margin-bottom: 32px;
+    }
+
+    &__img {
+        width: 170px;
+    }
+
+    &__link {
+        color: #891d92 !important;
+
+        &:hover {
+            color:#e36522 !important;
+        }
+    }
+
+    &__table {
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    &__table tr {
+        padding: 0.35em;
+        border-bottom: 1px solid #ccc;
+    }
+
+    &__table tr:last-child {
+        border-bottom: 0;
+    }
+
+    &__table th,
+    &__table td {
+        border: 0;
+        padding: 40px 24px;
+        text-align: left;
+    }
+    &__table .friends__logo {
+        text-align: center;
+    }
+
+    @media screen and (max-width: 992px) {
+        &__table caption {
+            font-size: 1.3em;
+        }
+
+        &__table tr {
+            border: 1px solid #ccc;
+            display: block;
+            margin-bottom: 0.625em;
+        }
+
+        &__table td {
+            border-top: solid 1px #dee2e6;
+            display: block;
+            font-size: 16px;
+            text-align: left;
+        }
+
+        &__table td:last-child {
+            border-bottom: 0;
+        }
+
+        &__table td:first-child {
+            border-top: 0;
+        }
+    }
+}
