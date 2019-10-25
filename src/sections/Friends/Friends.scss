@@ -72,5 +72,9 @@
         &__table td:first-child {
             border-top: 0;
         }
+
+        &__table tr:last-child {
+            border-bottom: 1px solid #ccc;
+        }
     }
 }
