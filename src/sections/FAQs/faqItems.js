@@ -12,6 +12,10 @@ const faqs = [
         answer: "Yes. Please check our packages. We come to your event with all our own lighting and sound. We also have a DJ Booth so we dont need a table"
     },
     {
+        question: "Do you have public liability (PLI) and PAT testing certificates?",
+        answer: "Yes we have PLI cover and all electrical equipment has been PAT tested. Certificates can be provided upon request"
+    },
+    {
         question: "Can you play my playlist?",
         answer: "Yes we can work to your playlist with the agreement that we have overall creative licence. Our experience means we can see just by looking at the playlist if people will dance to it"
     },
@@ -69,7 +73,7 @@ const faqs = [
     },
     {
         question: "I have booked a singer, band, saxophonist etc can you work with that",
-        answer: "Of course! The artist will need to provide there own PA or contact us directly to see what we can do for them"
+        answer: "Of course! The artist will need to provide their own PA or contact us directly to see what we can do for them"
     }
 ];
 

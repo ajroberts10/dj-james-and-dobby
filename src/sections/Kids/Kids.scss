@@ -20,6 +20,10 @@
     position: relative;
     padding-bottom: 40px;
 
+    &__section {
+        margin-bottom: 36px;
+    }
+
     &__title {
         margin-bottom: 32px;
         background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
@@ -42,9 +46,15 @@
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke: 1px black;
         color: transparent;
-        text-align: center;
-        width: 130px;
+        text-align: left;
 
+        &--short {
+            width: 130px;
+        }
+
+        &--long {
+            width: 500px;
+        }
     }
 
     &__link {

@@ -23,7 +23,6 @@ class kids extends Component {
                             and playing time
                         </small>
                     </p>
-                    {/* <MenuItem text="Kids Party Package" id="kids"> */}
                     <PackageCard
                         id="bronze-images"
                         title="Bronze Package"
@@ -39,9 +38,42 @@ class kids extends Component {
                         <p>Why not try combining our kids party package with some of our fantastic <a className="kids__link" href="/packages">ad-ons</a>
                         </p>
                     </PackageCard>
-                    <div class="container">
+                    <div class="container kids__section">
                         <div className="col-12 text-center">
-                            <h1 className="kids__sub-title">Videos</h1>
+                            <h1 className="kids__sub-title kids__sub-title--long">Popular Combos</h1>
+                        </div>
+                        <div className="row homeButtons__columns">
+                            <div className="col-sm-12 col-md-12 col-lg-6">
+                                <div className="card kids__card">
+                                    <div className="card-header">Kids party package with UV ad-on</div>
+                                    <div className="card-body">
+                                        <div class="video">
+                                            <img
+                                                src="https://res.cloudinary.com/musicandcolour/image/upload/c_scale,h_271,w_483/v1572006271/kids/Image_from_iOS_21.jpg"
+                                                className="d-block w-100"
+                                            ></img>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-sm-12 col-md-12 col-lg-6">
+                                <div className="card kids__card">
+                                    <div className="card-header">Kids party package with balloon modelling</div>
+                                    <div className="card-body">
+                                        <div class="video">
+                                            <img
+                                                src="https://res.cloudinary.com/musicandcolour/image/upload/c_scale,h_271,w_483/v1572006271/kids/7.jpg"
+                                                className="d-block w-100"
+                                            ></img>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container kids__section">
+                        <div className="col-12 text-center">
+                            <h1 className="kids__sub-title kids__sub-title--short">Videos</h1>
                         </div>
                         <div className="row homeButtons__columns">
                             <div className="col-sm-12 col-md-12 col-lg-6">
@@ -61,7 +93,7 @@ class kids extends Component {
                             </div>
                             <div className="col-sm-12 col-md-12 col-lg-6">
                                 <div className="card kids__card">
-                                    <div className="card-header">Customsed Sound & Lighting</div>
+                                    <div className="card-header">Customised Sound & Lighting</div>
                                     <div className="card-body">
                                         <div class="video">
                                             <video
