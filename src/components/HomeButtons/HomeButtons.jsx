@@ -8,8 +8,6 @@ const Button = ({ href, buttonText }) => (
     </a>
 );
 
-const iconStyle = { fontSize: "30px" };
-
 class HomeButtons extends Component {
     render() {
         return (

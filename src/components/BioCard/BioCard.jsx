@@ -4,7 +4,7 @@ import './BioCard.scss';
 
 class BioCard extends Component {
     render() {
-        const { position, title, name, age, music, image } = this.props;
+        const { position, title, age, music, image } = this.props;
         return (
             <div className="container bioCard">
                 <div className="row">
