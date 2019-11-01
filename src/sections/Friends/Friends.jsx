@@ -41,6 +41,20 @@ class Friends extends Component {
                                     <td>Magic mirror, selfie wizard and selfie post box</td>
                                     <td><a className="friends__link" target="_blank" href="https://www.paparazzimirror.co.uk">www.paparazzimirror.co.uk</a></td>
                                 </tr>
+                                <tr>
+                                    <td className="friends__logo">
+                                        <img className="friends__img" src="https://res.cloudinary.com/musicandcolour/image/upload/v1572615937/logos/ai-harry-logo-01.png"></img>
+                                    </td>
+                                    <td>Registered charity providing a free holiday to ‘Harry’s Caravan’, Blackpool for any child (and family) who has had or is receiving treatment for cancer</td>
+                                    <td><a className="friends__link" target="_blank" href="https://www.harrysholidayhangout.org.uk">www.harrysholidayhangout.org.uk</a></td>
+                                </tr>
+                                <tr>
+                                    <td className="friends__logo">
+                                        The Emma Cosgrove Foundation
+                                    </td>
+                                    <td>Supporting teens affected by cancer</td>
+                                    <td><a className="friends__link" target="_blank" href="https://www.emmacosgrovefoundation.org">www.emmacosgrovefoundation.org</a></td>
+                                </tr>
 
                             </tbody>
                         </table>
