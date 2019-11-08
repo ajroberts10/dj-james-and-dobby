@@ -80,9 +80,6 @@ class PackageCard extends Component {
                         <div className="packageCard__content-body">
                             {children}
                         </div>
-                        <div className="packageCard__enquire">
-                            <EnquireButton />
-                        </div>
                     </div>
                 </div>
                 <div className="card-footer">

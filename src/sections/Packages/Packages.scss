@@ -1,6 +1,6 @@
 .packages {
     font-size: 20px;
-    margin: 32px 0;
+    margin-top: 32px;
 
     &__title {
         margin-bottom: 32px;
@@ -12,6 +12,14 @@
         &-text {
             margin-bottom: 32px;
         }
+    }
+
+    &__kids {
+        margin-bottom: 24px;
+    }
+
+    &__select {
+        text-align: center;
     }
 
     &__link {
@@ -50,12 +58,37 @@
         }
     }
 
-    &__table th {
-        border-top: none;
+    &__table {
+        font-size: 16px;
+
+        & th {
+            border-top: none;
+        }
+
     }
+
+
 
     h2 {
         margin-bottom: 24px;
+    }
+
+    &__price-bar {
+        background-color: #D3D3D3;
+        bottom: 0px;
+
+        height: 70px;
+        margin-top: 24px;
+
+        position: sticky;
+        text-align: center;
+        width: 100%;
+
+        & h3 {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 20px 0;
+        }
     }
 }
 
