@@ -82,7 +82,7 @@ class PackageCard extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="card-footer">
+                <div className="card-footer packageCard__footer">
                     <p className="packageCard__price">£{price}</p>
                 </div>
             </div>

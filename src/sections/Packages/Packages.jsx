@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import PackageCard from '../../components/PackageCard/PackageCard';
@@ -39,20 +39,15 @@ class Packages extends Component {
                 <div className="container">
                     <h1 className="packages__title">Packages</h1>
                     <p className="packages__intro">
-                        We have a number of different packages that can be tailored to suit your event.
+                        We have a number of different packages that can be tailored to suit your event. When selecting a package, it's worth thinking about the size of the venue for your event and the number of guests you will be expecting. If you're not sure which would fit best, please feel free to get in touch to discuss the details.
                     </p>
-                    <h3 className="packages__steps">Step 1:</h3>
-                    <p className="packages__steps-text">Identify which package would be suitable for your event. When selecting a package, it's worth thinking about the size of the venue for your event and the number of guests you will be expecting. If you're not sure which would fit best, please feel free to get in touch to discuss the details.</p>
+                    <p>You can view the details of each package by clicking on a package title. Selecting the the checkbox next to each package and add-on will provide you with an estimated price in the bar at the bottom of the page.</p>
+
+                    <h3 className="packages__steps">Step 1</h3>
+                    <p className="packages__steps-text">Select a package</p>
 
 
-                    <div className="row packages__kids">
-                        <div className="col-10">
-                            <h2><a className="packages__link" href="/packages/kids">Kid's Parties <FontAwesomeIcon className="packages__icon" icon={faChevronRight} /></a></h2>
-                        </div>
-                        <div className="col-2 packages__select">
-                            <input type="radio" value={KIDS_PRICE} id="packageSelectKids" name="packageSelect" onChange={this.handleRadioSelect} />
-                        </div>
-                    </div>
+
                     <div className="row">
                         <div className="col-10">
                             <MenuItem text="Bronze Package" id="bronze">
@@ -71,7 +66,15 @@ class Packages extends Component {
                             </MenuItem>
                         </div>
                         <div className="col-2 packages__select">
+                            {/* <input type="radio" value={BRONZE_PRICE} id="packageSelectBronze" name="packageSelect" onChange={this.handleRadioSelect} /> */}
                             <input type="radio" value={BRONZE_PRICE} id="packageSelectBronze" name="packageSelect" onChange={this.handleRadioSelect} />
+                            <label for="packageSelectBronze">
+                                <span>
+                                    <FontAwesomeIcon className="packages__tick" icon={faCheck} />
+                                </span>
+                            </label>
+
+
                         </div>
                     </div>
                     <div className="row">
@@ -93,6 +96,11 @@ class Packages extends Component {
                         </div>
                         <div className="col-2 packages__select">
                             <input type="radio" value={SILVER_PRICE} id="packageSelectSilver" name="packageSelect" onChange={this.handleRadioSelect} />
+                            <label for="packageSelectSilver">
+                                <span>
+                                    <FontAwesomeIcon className="packages__tick" icon={faCheck} />
+                                </span>
+                            </label>
                         </div>
                     </div>
                     <div className="row">
@@ -114,15 +122,35 @@ class Packages extends Component {
                         </div>
                         <div className="col-2 packages__select">
                             <input type="radio" value={GOLD_PRICE} id="packageSelectGold" name="packageSelect" onChange={this.handleRadioSelect} />
+                            <label for="packageSelectGold">
+                                <span>
+                                    <FontAwesomeIcon className="packages__tick" icon={faCheck} />
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div className="row packages__kids">
+                        <div className="col-10">
+                            <MenuItem text="Kids Party" id="kids">
+                                <p>Click <a className="packages__link">here</a> to view our kids party packages</p>
+                            </MenuItem>
+                        </div>
+                        <div className="col-2 packages__select">
+                            <input type="radio" value={KIDS_PRICE} id="packageSelectKids" name="packageSelect" onChange={this.handleRadioSelect} />
+                            <label for="packageSelectKids">
+                                <span>
+                                    <FontAwesomeIcon className="packages__tick" icon={faCheck} />
+                                </span>
+                            </label>
                         </div>
                     </div>
 
-                    <h3 className="packages__steps">Step 2:</h3>
-                    <p className="packages__steps-text">Make your event extra special by selecting one or more of our package ad-ons. </p>
+                    <h3 className="packages__steps">Step 2</h3>
+                    <p className="packages__steps-text">Make your event extra special by selecting one or more of our package add-ons. </p>
 
                     {/* <MenuItem text="Ad-ons" id="adons"> */}
                         <table className="table packages__table">
-                            <caption>List of ad-ons</caption>
+                            <caption>List of add-ons</caption>
                             <thead>
                                 <tr>
                                     <th scope="col">Item</th>
@@ -138,6 +166,11 @@ class Packages extends Component {
                                         </td>
                                         <td>
                                             <input className="packages__check" type="checkbox" value={value} id={`item-${index}`} name="packageSelect" onChange={this.handleCheckboxSelect} />
+                                            <label for={`item-${index}`}>
+                                                <span>
+                                                    <FontAwesomeIcon className="packages__tick" icon={faCheck} />
+                                                </span>
+                                            </label>
                                         </td>
                                     </tr>
                                 ))}

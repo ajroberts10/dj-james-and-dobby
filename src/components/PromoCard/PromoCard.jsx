@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-scroll'
-
+import { NavLink } from 'react-router-dom';
 import Logo from '../Logo/Logo';
 import QuoteCarousel from '../QuoteCarousel/QuoteCarousel';
 import quotes from './quotes';
@@ -24,17 +23,9 @@ class PromoCard extends Component {
                                 <h1 className="promoCard__heading featurette-heading">Professional Event DJs</h1>
                                 <hr className="my-4" />
                                 <QuoteCarousel quotes={quotes} />
-                                <Link
-                                    activeClass="active"
-                                    className="btn btn-primary btn-lg promoCard__button"
-                                    to="homeButtons"
-                                    spy={true}
-                                    smooth={true}
-                                    duration={500}
-                                    offset={-40}
-                                >
-                                    Find Out More <span style={style}>&#128071;</span>
-                                </Link>
+                                <NavLink className="btn btn-primary btn-lg promoCard__button" to="/packages">
+                                    Find Out More
+                                </NavLink>
                             </div>
                         </div>
                     </div>

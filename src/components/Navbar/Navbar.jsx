@@ -23,9 +23,18 @@ class Navbar extends Component {
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/djs">About Us</NavLink>
                             </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to="/packages">Packages</NavLink>
+                            <li className="nav-item dropdown ">
+                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Packages
+                                </a>
+                                <div className="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                                    <NavLink className="dropdown-item bg-dark" to="/packages">Events</NavLink>
+                                    <NavLink className="dropdown-item bg-dark" to="/packages/kids">Kids Parties</NavLink>
+                                </div>
                             </li>
+                            {/* <li className="nav-item">
+                                <NavLink className="nav-link" to="/packages">Packages</NavLink>
+                            </li> */}
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/gallery">Gallery</NavLink>
                             </li>

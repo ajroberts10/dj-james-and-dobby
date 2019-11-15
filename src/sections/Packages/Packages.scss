@@ -1,3 +1,4 @@
+@import "../../styles/mixins.scss";
 .packages {
     font-size: 20px;
     margin-top: 32px;
@@ -23,9 +24,18 @@
     }
 
     &__link {
-        font-family: 'Baloo', cursive;
+        font-family: "Baloo", cursive;
         margin-bottom: 32px;
-        background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+        background-image: linear-gradient(
+            to left,
+            violet,
+            indigo,
+            blue,
+            green,
+            yellow,
+            orange,
+            red
+        );
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -64,20 +74,17 @@
         & th {
             border-top: none;
         }
-
     }
-
-
 
     h2 {
         margin-bottom: 24px;
     }
 
     &__price-bar {
-        background-color: #D3D3D3;
+        background-color: #d3d3d3;
         bottom: 0px;
 
-        height: 70px;
+        height: 80px;
         margin-top: 24px;
 
         position: sticky;
@@ -87,9 +94,75 @@
         & h3 {
             font-size: 24px;
             font-weight: bold;
-            padding: 20px 0;
+            padding: 25px 0;
         }
     }
 }
 
+input[type="radio"] {
+    display: none;
 
+    + label {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+
+        span {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin-top: 15px;
+            vertical-align: middle;
+            cursor: pointer;
+            border-radius: 50%;
+            border: 3px solid orange;
+            text-align: center;
+            line-height: 25px;
+
+            .packages__tick {
+                color: orange;
+                opacity: 0;
+                transition: all 0.3s ease;
+            }
+
+            @include xl {
+                margin-right: 40px;
+            }
+        }
+    }
+
+    &:checked + label span .packages__tick {
+        opacity: 1;
+    }
+}
+
+input[type="checkbox"] {
+    display: none;
+
+    + label {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+
+        span {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin-left: 20px;
+            margin-top: 8px;
+            vertical-align: middle;
+            cursor: pointer;
+            border: 3px solid orange;
+            text-align: center;
+            line-height: 25px;
+
+            .packages__tick {
+                color: orange;
+                opacity: 0;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+
+    &:checked + label span .packages__tick {
+        opacity: 1;
+    }
+}
