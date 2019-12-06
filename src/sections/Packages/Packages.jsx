@@ -160,39 +160,33 @@ class Packages extends Component {
                     </div>
                     <h3 className="packages__steps">Add-ons</h3>
                     <p className="packages__steps-text">Make your event extra special by selecting one or more of our package add-ons. </p>
-
-                        <table className="table packages__table">
-                            <caption>List of add-ons</caption>
-                            <thead>
+                    <table className="table packages__table">
+                        <caption>List of add-ons</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Item</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Select</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {adons.map(({name, price: {value, desc}}, index) => (
                                 <tr>
-                                    <th scope="col">Item</th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">Select</th>
+                                    <td>{name}</td>
+                                    <td><p>£{value} <small>{desc}</small></p>
+                                    </td>
+                                    <td>
+                                        <input className="packages__check" type="checkbox" value={value} id={`item-${index}`} name="packageSelect" onChange={this.handleCheckboxSelect} />
+                                        <label for={`item-${index}`}>
+                                            <span>
+                                                <FontAwesomeIcon className="packages__tick" icon={faCheck} />
+                                            </span>
+                                        </label>
+                                    </td>
                                 </tr>
-                            </thead>
-                            <tbody>
-                                {adons.map(({name, price: {value, desc}}, index) => (
-                                    <tr>
-                                        <td>{name}</td>
-                                        <td><p>£{value} <small>{desc}</small></p>
-                                        </td>
-                                        <td>
-                                            <input className="packages__check" type="checkbox" value={value} id={`item-${index}`} name="packageSelect" onChange={this.handleCheckboxSelect} />
-                                            <label for={`item-${index}`}>
-                                                <span>
-                                                    <FontAwesomeIcon className="packages__tick" icon={faCheck} />
-                                                </span>
-                                            </label>
-                                        </td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
-                    <p>
-                        Our aim is to keep your dancefloor busy with a great mix of music but we want it look and sound amazing as well!
-                        We have a number of fantastic sound and lighting packages to choose from as well as a wide variety of add-on items to make your event extra special.
-                    </p>
-                    <p>Before we throw too much information at you, please select one of the following two options to get started:</p>
+                            ))}
+                        </tbody>
+                    </table>
                 </div>
                 <div className="packages__price-bar">
                     <div className="container">
