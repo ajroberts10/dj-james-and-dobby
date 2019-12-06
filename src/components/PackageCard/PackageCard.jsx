@@ -5,12 +5,17 @@ import "./PackageCard.scss";
 
 class PackageCard extends Component {
     render() {
-        const { id, price, children, packageImages } = this.props;
+        const { id, price, children, packageImages, title, selected } = this.props;
         const href = `#${id}`;
+        const packageClasses = selected === true ? 'card packageCard packageCard--selected' : 'card packageCard';
+        const headerClasses = title ? `card-header packageCard__header packageCard__header--${title.toLowerCase()}` : `card-header packageCard__header`;
         return (
-            <div className="card packageCard">
-                <div className="row card-body packageCard__body">
-                    <div className="col-lg-6 packageCard__images">
+            <div className={packageClasses}>
+                <div className={headerClasses}>
+                    {title}
+                </div>
+                <div className="card-body packageCard__body">
+                    <div className="packageCard__images">
                         <div
                             id={id}
                             className="carousel slide card-img-top"
@@ -76,14 +81,12 @@ class PackageCard extends Component {
                             </a>
                         </div>
                     </div>
-                    <div className="col-lg-6 packageCard__content">
-                        <div className="packageCard__content-body">
+                    <div className="packageCard__content card-body">
+                        <p className="packageCard__price">£{price}</p>
+                        <div className="packageCard__content-body card-text">
                             {children}
                         </div>
                     </div>
-                </div>
-                <div className="card-footer packageCard__footer">
-                    <p className="packageCard__price">£{price}</p>
                 </div>
             </div>
         );

@@ -7,6 +7,12 @@
         margin-bottom: 32px;
     }
 
+    &__enquire {
+        display: flex;
+        justify-content: center;
+        margin: 64px 0;
+    }
+
     &__steps {
         margin: 32px 0;
 
@@ -21,6 +27,43 @@
 
     &__select {
         text-align: center;
+    }
+
+    &__cards {
+        margin-top: 40px;
+
+        &-buttons {
+            text-align: center;
+        }
+
+        &-button {
+            background-image: linear-gradient(to bottom right, rgb(255, 141, 42), purple);
+            color: white;
+            border: 0;
+            margin-bottom: 32px;
+            width: 80%;
+
+        }
+
+        &-text {
+            font-size: 14px;
+            list-style: none;
+            padding-left: 0;
+
+            &-item {
+                border-bottom: solid 1px grey;
+                margin-bottom: 16px;
+                padding-bottom: 16px;
+
+                &:last-of-type {
+                    border-bottom: 0;
+                }
+
+                &-icon {
+                    margin-right: 12px;
+                }
+            }
+        }
     }
 
     &__link {
@@ -96,6 +139,15 @@
             font-weight: bold;
             padding: 25px 0;
         }
+    }
+
+    .card {
+        border: none;
+    }
+
+    .card-body {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 

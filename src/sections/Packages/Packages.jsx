@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import {
+    faCheck,
+    faClock,
+    faMusic,
+    faPlayCircle,
+    faHeadphones,
+    faLightbulb
+ } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import PackageCard from '../../components/PackageCard/PackageCard';
 import MenuItem from '../../components/MenuItem/MenuItem';
+import EnquireButton from '../../components/EnquireButton/EnquireButton';
 import './Packages.scss';
 import adons from './adons.json';
 import { bronze, silver, gold } from '../../components/PackageCard/images';
@@ -18,11 +26,12 @@ class Packages extends Component {
         super(props)
         this.state = {
             packagePrice: 0,
-            adonsPrice: 0
+            adonsPrice: 0,
+            selectedPackage: null
         }
     }
 
-    handleRadioSelect = event => this.setState({ packagePrice: event.target.value});
+    handleRadioSelect = ({target: { value, name }}) => this.setState({ packagePrice: value, selectedPackage: name});
 
     handleCheckboxSelect = ({target: {checked, value}}) => {
         const { adonsPrice } = this.state;
@@ -32,154 +41,128 @@ class Packages extends Component {
     }
 
     render() {
-        const { packagePrice, adonsPrice } = this.state;
+        const { packagePrice, adonsPrice, selectedPackage } = this.state;
         const totalPrice = parseInt(packagePrice) + parseInt(adonsPrice);
         return (
             <div className="packages">
                 <div className="container">
                     <h1 className="packages__title">Packages</h1>
-                    <p className="packages__intro">
-                        We have a number of different packages that can be tailored to suit your event. When selecting a package, it's worth thinking about the size of the venue for your event and the number of guests you will be expecting. If you're not sure which would fit best, please feel free to get in touch to discuss the details.
+                    <p className="packages__intro">You can browse our various sound and lighting packages below along with our add-on items that we can provide. Selecting each option will provide you with an estimated package cost at the bottom of the screen. Note this cost may be subject to change due to playing time and distance to venue. </p>
+                    <div className="row packages__cards">
+                        <div className="col-lg-4">
+                            <PackageCard
+                                id="bronze-images"
+                                title="Bronze"
+                                price={BRONZE_PRICE}
+                                packageImages={bronze}
+                                selected={ selectedPackage === 'bronze' }
+                            >
+                                <div className="packages__cards-buttons">
+                                    <button value={BRONZE_PRICE} name="bronze" className="btn packages__cards-button" onClick={this.handleRadioSelect}>      Select Package
+                                    </button>
+                                </div>
+                                <ul className="packages__cards-text">
+                                    <li className="packages__cards-text-item">
+                                        <FontAwesomeIcon className="packages__cards-text-item-icon" icon={faClock} />
+                                        4.5hrs DJ Performance
+                                    </li>
+                                    <li className="packages__cards-text-item">
+                                        <FontAwesomeIcon className="packages__cards-text-item-icon" icon={faHeadphones} />
+                                        DJ Booth
+                                    </li>
+                                    <li className="packages__cards-text-item">
+                                        <FontAwesomeIcon className="packages__cards-text-item-icon" icon={faPlayCircle} />
+                                        2 speakers
+                                    </li>
+                                    <li className="packages__cards-text-item">
+                                        <FontAwesomeIcon className="packages__cards-text-item-icon" icon={faLightbulb} />
+                                        2 lights on podiums
+                                    </li>
+                                    <li className="packages__cards-text-item">
+                                        <FontAwesomeIcon className="packages__cards-text-item-icon" icon={faMusic} />
+                                        Birthday parties, anniversaries, Christening/communion
+                                    </li>
+                                </ul>
+                            </PackageCard>
+                        </div>
+                        <div className="col-lg-4">
+                            <PackageCard
+                                id="silver-images"
+                                title="Silver"
+                                price={SILVER_PRICE}
+                                packageImages={silver}
+                                selected={ selectedPackage === 'silver' }
+                            >
+                                <div className="packages__cards-buttons">
+                                    <button value={SILVER_PRICE} name="silver" className="btn packages__cards-button" onClick={this.handleRadioSelect}>      Select Package
+                                    </button>
+                                </div>
+                                <ul className="packages__cards-text">
+                                    <li className="packages__cards-text-item">
+                                        <FontAwesomeIcon className="packages__cards-text-item-icon" icon={faClock} />
+                                        4.5hrs DJ Performance
+                                    </li>
+                                    <li className="packages__cards-text-item">
+                                        <FontAwesomeIcon className="packages__cards-text-item-icon" icon={faHeadphones} />
+                                        DJ Booth
+                                    </li>
+                                    <li className="packages__cards-text-item">
+                                        <FontAwesomeIcon className="packages__cards-text-item-icon" icon={faPlayCircle} />
+                                        2 speakers + 2 subwoofers
+                                    </li>
+                                    <li className="packages__cards-text-item">
+                                        <FontAwesomeIcon className="packages__cards-text-item-icon" icon={faLightbulb} />
+                                        4 lights on podiums
+                                    </li>
+                                    <li className="packages__cards-text-item">
+                                        <FontAwesomeIcon className="packages__cards-text-item-icon" icon={faMusic} />
+                                        Weddings, birthday parties, anniversaries, Christening/communion
+                                    </li>
+                                </ul>
+                            </PackageCard>
+                        </div>
+                        <div className="col-lg-4">
+                            <PackageCard
+                                id="gold-images"
+                                title="Gold"
+                                price={GOLD_PRICE}
+                                packageImages={gold}
+                                selected={ selectedPackage === 'gold' }
+                            >
+                                <div className="packages__cards-buttons">
+                                    <button value={GOLD_PRICE} name="gold" className="btn packages__cards-button" onClick={this.handleRadioSelect}>        Select Package
+                                    </button>
+                                </div>
+                                <ul className="packages__cards-text">
+                                    <li className="packages__cards-text-item">
+                                        <FontAwesomeIcon className="packages__cards-text-item-icon" icon={faClock} />
+                                        4.5hrs DJ Performance
+                                    </li>
+                                    <li className="packages__cards-text-item">
+                                        <FontAwesomeIcon className="packages__cards-text-item-icon" icon={faHeadphones} />
+                                        DJ Booth
+                                    </li>
+                                    <li className="packages__cards-text-item">
+                                        <FontAwesomeIcon className="packages__cards-text-item-icon" icon={faPlayCircle} />
+                                        4 speakers + 2 subwoofers
+                                    </li>
+                                    <li className="packages__cards-text-item">
+                                        <FontAwesomeIcon className="packages__cards-text-item-icon" icon={faLightbulb} />
+                                        Full lighting rig with various fixtures
+                                    </li>
+                                    <li className="packages__cards-text-item">
+                                        <FontAwesomeIcon className="packages__cards-text-item-icon" icon={faMusic} />
+                                        Weddings, birthday parties, anniversaries
+                                    </li>
+                                </ul>
+                            </PackageCard>
+                        </div>
+                    </div>
+                    <p>
+                        Our aim is to keep your dancefloor busy with a great mix of music but we want it look and sound amazing as well!
+                        We have a number of fantastic sound and lighting packages to choose from as well as a wide variety of add-on items to make your event extra special.
                     </p>
-                    <p>You can view the details of each package by clicking on a package title. Selecting the the checkbox next to each package and add-on will provide you with an estimated price in the bar at the bottom of the page.</p>
-
-                    <h3 className="packages__steps">Step 1</h3>
-                    <p className="packages__steps-text">Select a package</p>
-
-
-
-                    <div className="row">
-                        <div className="col-10">
-                            <MenuItem text="Bronze Package" id="bronze">
-                                <PackageCard id="bronze-images" title="Bronze Package" price={BRONZE_PRICE} packageImages={bronze}>
-                                    <ul>
-                                        <li>4.5hrs DJ Performance</li>
-                                        <li>DJ booth</li>
-                                        <li>2 speakers</li>
-                                        <li>2 lights on podiums (choice of moving heads or rotospheres)</li>
-                                        <li>Suitable for small venues and up to 100 guests</li>
-                                        <li>Birthday parties, anniversaries, Christening/communion</li>
-                                        <li>Set up time: 45mins</li>
-                                        <li>Pack down time: 45mins</li>
-                                    </ul>
-                                </PackageCard>
-                            </MenuItem>
-                        </div>
-                        <div className="col-2 packages__select">
-                            {/* <input type="radio" value={BRONZE_PRICE} id="packageSelectBronze" name="packageSelect" onChange={this.handleRadioSelect} /> */}
-                            <input type="radio" value={BRONZE_PRICE} id="packageSelectBronze" name="packageSelect" onChange={this.handleRadioSelect} />
-                            <label for="packageSelectBronze">
-                                <span>
-                                    <FontAwesomeIcon className="packages__tick" icon={faCheck} />
-                                </span>
-                            </label>
-
-
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-10">
-                            <MenuItem text="Silver Package" id="silver">
-                                <PackageCard id="silver-images" title="Silver Package" price={SILVER_PRICE} packageImages={silver}>
-                                    <ul>
-                                        <li>4.5hrs DJ Performance</li>
-                                        <li>DJ booth</li>
-                                        <li>2 speakers + 2 subwoofers</li>
-                                        <li>4 lights on podiums</li>
-                                        <li>Suitable for medium venues with large setup space and up to 200 guests</li>
-                                        <li>Weddings, birthday parties, anniversaries, Christening/communion</li>
-                                        <li>Set up time: 60mins</li>
-                                        <li>Pack down time: 60mins</li>
-                                    </ul>
-                                </PackageCard>
-                            </MenuItem>
-                        </div>
-                        <div className="col-2 packages__select">
-                            <input type="radio" value={SILVER_PRICE} id="packageSelectSilver" name="packageSelect" onChange={this.handleRadioSelect} />
-                            <label for="packageSelectSilver">
-                                <span>
-                                    <FontAwesomeIcon className="packages__tick" icon={faCheck} />
-                                </span>
-                            </label>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-10">
-                            <MenuItem text="Gold Package" id="gold">
-                                <PackageCard id="gold-images" title="Gold Package" price={GOLD_PRICE} packageImages={gold}>
-                                    <ul>
-                                        <li>4.5hrs DJ Performance</li>
-                                        <li>DJ booth</li>
-                                        <li>4 speakers + 2 subwoofers</li>
-                                        <li>Full lighting rig with various fixtures</li>
-                                        <li>Suitable for large venues and up to 300 guests</li>
-                                        <li>Weddings, birthday parties, anniversaries</li>
-                                        <li>Set up time: 90mins</li>
-                                        <li>Pack down time: 60mins</li>
-                                    </ul>
-                                </PackageCard>
-                            </MenuItem>
-                        </div>
-                        <div className="col-2 packages__select">
-                            <input type="radio" value={GOLD_PRICE} id="packageSelectGold" name="packageSelect" onChange={this.handleRadioSelect} />
-                            <label for="packageSelectGold">
-                                <span>
-                                    <FontAwesomeIcon className="packages__tick" icon={faCheck} />
-                                </span>
-                            </label>
-                        </div>
-                    </div>
-                    <div className="row packages__kids">
-                        <div className="col-10">
-                            <MenuItem text="Kids Party" id="kids">
-                                <p>Click <a className="packages__link">here</a> to view our kids party packages</p>
-                            </MenuItem>
-                        </div>
-                        <div className="col-2 packages__select">
-                            <input type="radio" value={KIDS_PRICE} id="packageSelectKids" name="packageSelect" onChange={this.handleRadioSelect} />
-                            <label for="packageSelectKids">
-                                <span>
-                                    <FontAwesomeIcon className="packages__tick" icon={faCheck} />
-                                </span>
-                            </label>
-                        </div>
-                    </div>
-
-                    <h3 className="packages__steps">Step 2</h3>
-                    <p className="packages__steps-text">Make your event extra special by selecting one or more of our package add-ons. </p>
-
-                    {/* <MenuItem text="Ad-ons" id="adons"> */}
-                        <table className="table packages__table">
-                            <caption>List of add-ons</caption>
-                            <thead>
-                                <tr>
-                                    <th scope="col">Item</th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">Select</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {adons.map(({name, price: {value, desc}}, index) => (
-                                    <tr>
-                                        <td>{name}</td>
-                                        <td><p>£{value} <small>{desc}</small></p>
-                                        </td>
-                                        <td>
-                                            <input className="packages__check" type="checkbox" value={value} id={`item-${index}`} name="packageSelect" onChange={this.handleCheckboxSelect} />
-                                            <label for={`item-${index}`}>
-                                                <span>
-                                                    <FontAwesomeIcon className="packages__tick" icon={faCheck} />
-                                                </span>
-                                            </label>
-                                        </td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
-                    {/* </MenuItem> */}
-                    <small className="packages__disclaimer">
-                        Note: Prices may vary depending on distance to venue and playing time
-                    </small>
+                    <p>Before we throw too much information at you, please select one of the following two options to get started:</p>
                 </div>
                 <div className="packages__price-bar">
                     <div className="container">
@@ -189,7 +172,6 @@ class Packages extends Component {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         );

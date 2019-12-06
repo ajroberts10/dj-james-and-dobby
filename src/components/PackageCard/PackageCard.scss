@@ -1,22 +1,53 @@
-@import '../../styles/mixins.scss';
+@import "../../styles/mixins.scss";
 
 .packageCard {
     border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 90%;
+    margin-bottom: 40px;
     padding: 0;
+    transition: 0.3s;
+
+    &:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+        transform: scale(1.05);
+        transition: transform 0.4s ease-in-out;
+    }
+
+    &__header {
+        font-weight: bold;
+        text-align: center;
+
+        &--bronze {
+            background-color: #cd7f32;
+        }
+
+        &--silver {
+            background-color: #c0c0c0;
+        }
+
+        &--gold {
+            background-color: #d4af37;
+        }
+    }
 
     &__intro-link {
         color: #333 !important;
     }
 
     &__body {
-        padding: 16px;
+        padding: 0 16px;
     }
 
     &__content {
         margin-top: 24px;
+        height: 500px;
 
         &-body {
-            font-size: 17px;
+            font-size: 16px;
+            padding: 0 24px;
         }
     }
 
@@ -29,10 +60,62 @@
     &__images {
         align-items: center;
         display: flex;
+        // height: 300px;
     }
 
     &__enquire button {
         margin: auto;
     }
 
+    &::before,
+    &::after {
+        box-sizing: inherit;
+        content: "";
+        position: absolute;
+        border: 8px solid transparent;
+        z-index: 1000;
+        width: 0;
+        height: 0;
+    }
+
+    &::before {
+        top: 0;
+        left: 0;
+    }
+
+    &::after {
+        bottom: 0;
+        right: 0;
+    }
+
+    &--selected {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+        transform: scale(1.05);
+        transition: transform 0.4s ease-in-out;
+    }
+
+    &--selected::before,
+    &--selected::after {
+        width: 100%;
+        height: 100%;
+    }
+
+    &--selected::before {
+        border-top-color: #00b300; // Make borders visible
+        border-right-color: #00b300;
+        transition: width 0.25s ease-out,
+        // Width expands first
+        height 0.25s ease-out 0.25s; // And then height
+    }
+
+    &--selected::after {
+        border-bottom-color: #00b300; // Make borders visible
+        border-left-color: #00b300;
+        transition: border-color 0s ease-out 0.5s,
+        // Wait for ::before to finish before showing border
+        width 0.25s ease-out 0.5s,
+        // And then exanding width
+        height 0.25s ease-out 0.75s; // And finally height
+    }
 }

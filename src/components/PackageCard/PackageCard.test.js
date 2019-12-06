@@ -30,6 +30,39 @@ describe('The PackageCard component', () => {
         });
     });
 
+    describe('Setting the selected prop', () => {
+        describe('Setting selected to true', () => {
+            const wrapper = mount(<PackageCard selected={true} />)
+            it('should set the selected class to the package card', () => {
+                expect(wrapper.find('.card').hasClass('packageCard--selected')).toEqual(true);
+            });
+        });
+
+        describe('Setting selected to false', () => {
+            const wrapper = mount(<PackageCard selected={false} />)
+            it('should set the selected class to the package card', () => {
+                expect(wrapper.find('.card').hasClass('packageCard--selected')).toEqual(false);
+            });
+        });
+    });
+
+    describe('The title prop', () => {
+        describe('Setting the title prop to a value', () => {
+            const wrapper = mount(<PackageCard title="test" />)
+            it('should set the appropriate header classes containing the title', () => {
+                expect(wrapper.find('.packageCard__header').hasClass('packageCard__header--test')).toEqual(true);
+            });
+        });
+
+        describe('Not setting a title prop', () => {
+            const wrapper = mount(<PackageCard />)
+            it('should set the default header classes', () => {
+                expect(wrapper.find('div').at(1).prop('className')).toEqual('card-header packageCard__header');
+            });
+        });
+    });
+
+
     describe('Setting the packageImages prop', () => {
         const wrapper = mount(<PackageCard id="test" packageImages={images} />)
         it('should render the appropriate amount of images', () => {
