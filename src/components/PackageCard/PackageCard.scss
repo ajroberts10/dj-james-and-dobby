@@ -102,17 +102,17 @@
     }
 
     &--selected::before {
-        border-top-color: #00b300; // Make borders visible
-        border-right-color: #00b300;
+        border-top-color: purple; // Make borders visible
+        border-right-color: purple;
         transition: width 0.25s ease-out,
         // Width expands first
         height 0.25s ease-out 0.25s; // And then height
     }
 
     &--selected::after {
-        border-bottom-color: #00b300; // Make borders visible
-        border-left-color: #00b300;
-        transition: border-color 0s ease-out 0.5s,
+        border-bottom-color: purple; // Make borders visible
+        border-left-color: purple;
+        transition: border-color 0s ease-out 0.25s,
         // Wait for ::before to finish before showing border
         width 0.25s ease-out 0.5s,
         // And then exanding width
