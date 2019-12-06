@@ -198,7 +198,7 @@ class Packages extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-sm-12">
-                                <h3 className="packages__price-value">{`Estimated Package Price: £${totalPrice}`}</h3>
+                                <h3 className="packages__price-value">{`Package Price: £${totalPrice}`}</h3>
                             </div>
                         </div>
                     </div>
