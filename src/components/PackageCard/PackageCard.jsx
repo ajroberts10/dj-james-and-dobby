@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-import EnquireButton from "../../components/EnquireButton/EnquireButton";
 import "./PackageCard.scss";
 
 class PackageCard extends Component {

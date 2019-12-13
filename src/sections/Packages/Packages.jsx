@@ -173,13 +173,13 @@ class Packages extends Component {
                         </thead>
                         <tbody>
                             {adons.map(({name, price: {value, desc}}, index) => (
-                                <tr>
+                                <tr key={index}>
                                     <td>{name}</td>
                                     <td><p>£{value} <small>{desc}</small></p>
                                     </td>
                                     <td>
                                         <input className="packages__check" type="checkbox" value={value} id={`item-${index}`} name="packageSelect" onChange={this.handleCheckboxSelect} />
-                                        <label for={`item-${index}`}>
+                                        <label htmlFor={`item-${index}`}>
                                             <span>
                                                 <FontAwesomeIcon className="packages__tick" icon={faCheck} />
                                             </span>

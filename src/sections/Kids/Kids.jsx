@@ -73,6 +73,7 @@ class kids extends Component {
                                             <img
                                                 src="https://res.cloudinary.com/musicandcolour/image/upload/c_scale,h_271,w_483/v1572006271/kids/Image_from_iOS_21.jpg"
                                                 className="d-block w-100"
+                                                alt=""
                                             ></img>
                                         </div>
                                     </div>
@@ -86,6 +87,7 @@ class kids extends Component {
                                             <img
                                                 src="https://res.cloudinary.com/musicandcolour/image/upload/c_scale,h_271,w_483/v1572006271/kids/7.jpg"
                                                 className="d-block w-100"
+                                                alt=""
                                             ></img>
                                         </div>
                                     </div>

@@ -21,7 +21,7 @@ class HomeButtons extends Component {
                                 <img
                                     className="card-img-top homeButtons__card-image"
                                     src="https://res.cloudinary.com/musicandcolour/image/upload/v1568983181/wedding2_gfdxpy.png"
-                                    alt="Card image cap"
+                                    alt=""
                                 />
                                 <div className="card-body">
                                     <p className="card-text homeButtons__card-text">
@@ -39,7 +39,7 @@ class HomeButtons extends Component {
                                 <img
                                     className="card-img-top homeButtons__card-image"
                                     src="https://res.cloudinary.com/musicandcolour/image/upload/v1568982766/wedding1_vw7dve.png"
-                                    alt="Card image cap"
+                                    alt=""
                                 />
                                 <div className="card-body">
                                     <p className="card-text homeButtons__card-text">
@@ -57,7 +57,7 @@ class HomeButtons extends Component {
                                 <img
                                     className="card-img-top homeButtons__card-image"
                                     src="https://res.cloudinary.com/musicandcolour/image/upload/c_scale,h_180,w_344/v1568982198/IMG_0969_wxjlal.jpg"
-                                    alt="Card image cap"
+                                    alt=""
                                 />
                                 <div className="card-body">
                                     <p className="card-text homeButtons__card-text">

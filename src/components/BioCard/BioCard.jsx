@@ -13,7 +13,7 @@ class BioCard extends Component {
                             <div className="row">
                                 <div className="col-md-12">
                                     <div className="bioCard__image">
-                                        <img src={require(`./${image}`)} alt="image" />
+                                        <img src={require(`./${image}`)} alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -24,7 +24,7 @@ class BioCard extends Component {
                             <div className="row">
                                 <div className="col-md-12">
                                     <div className="bioCard__image">
-                                        <img src={require(`./${image}`)} alt="image" />
+                                        <img src={require(`./${image}`)} alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -45,7 +45,7 @@ class BioCard extends Component {
                             <div className="row">
                                 <div className="col-md-12">
                                     <div className="bioCard__image">
-                                        <img src={require(`./${image}`)} alt="image" />
+                                        <img src={require(`./${image}`)} alt="" />
                                     </div>
                                 </div>
                             </div>

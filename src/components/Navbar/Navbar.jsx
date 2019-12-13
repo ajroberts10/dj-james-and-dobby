@@ -24,11 +24,12 @@ class Navbar extends Component {
                                 <NavLink className="nav-link" to="/djs">About Us</NavLink>
                             </li>
                             <li className="nav-item dropdown ">
-                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <button className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Packages
-                                </a>
+                                </button>
                                 <div className="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
                                     <NavLink className="dropdown-item bg-dark" to="/packages">Events</NavLink>
+                                    <div className="dropdown-divider"></div>
                                     <NavLink className="dropdown-item bg-dark" to="/packages/kids">Kids Parties</NavLink>
                                 </div>
                             </li>

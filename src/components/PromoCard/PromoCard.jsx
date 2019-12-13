@@ -5,10 +5,6 @@ import QuoteCarousel from '../QuoteCarousel/QuoteCarousel';
 import quotes from './quotes';
 import './PromoCard.scss';
 
-const style = {
-    'fontSize': '20px'
-};
-
 class PromoCard extends Component {
     render() {
         return (

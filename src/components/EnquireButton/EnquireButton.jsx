@@ -7,7 +7,7 @@ class EnquireButton extends Component {
         const { size } = this.props;
         const classes = `enquireButton ${size} btn btn-primary btn-lg`;
         return (
-            <button className={classes} href="#" role="button" data-toggle="modal" data-target="#contactModal">Enquire Now</button>
+            <button className={classes} href="#" data-toggle="modal" data-target="#contactModal">Enquire Now</button>
         )
     }
 };

@@ -4,11 +4,23 @@ import { mount } from 'enzyme';
 import Packages from './Packages';
 
 
+
 describe('The Packages section component', () => {
     let wrapper;
 
     beforeEach(() => {
         wrapper = mount(<Packages />);
+    });
+
+    it('should load the price bar in a closed state', () => {
+        expect(wrapper.find('.packages__price-bar').hasClass('packages__price-bar--open')).toEqual(false);
+    });
+
+    it('should open the price bar once a package has been selected', () => {
+        const button = wrapper.find('.packages__cards-button').first();
+        button.props().onClick({ target: { value: 200 } });
+        wrapper.update();
+        expect(wrapper.find('.packages__price-bar').hasClass('packages__price-bar--open')).toEqual(true);
     });
 
     it('should update the price when a package is selected', () => {
