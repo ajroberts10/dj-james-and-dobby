@@ -127,17 +127,25 @@
         background-color: #d3d3d3;
         bottom: 0px;
 
-        height: 80px;
         margin-top: 24px;
-
+        max-height: 0;
         position: sticky;
         text-align: center;
         width: 100%;
+        -webkit-transition: max-height 1s;
+        -moz-transition: max-height 1s;
+        -ms-transition: max-height 1s;
+        -o-transition: max-height 1s;
+        transition: max-height 1s;
 
         & h3 {
             font-size: 24px;
             font-weight: bold;
             padding: 25px 0;
+        }
+
+        &--open {
+            max-height: 80px;
         }
     }
 

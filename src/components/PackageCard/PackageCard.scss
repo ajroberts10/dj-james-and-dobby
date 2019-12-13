@@ -71,26 +71,26 @@
         margin: auto;
     }
 
-    &::before,
-    &::after {
-        box-sizing: inherit;
-        content: "";
-        position: absolute;
-        border: 8px solid transparent;
-        z-index: 1000;
-        width: 0;
-        height: 0;
-    }
+    // &::before,
+    // &::after {
+    //     box-sizing: inherit;
+    //     content: "";
+    //     position: absolute;
+    //     border: 8px solid transparent;
+    //     z-index: 1000;
+    //     width: 0;
+    //     height: 0;
+    // }
 
-    &::before {
-        top: 0;
-        left: 0;
-    }
+    // &::before {
+    //     top: 0;
+    //     left: 0;
+    // }
 
-    &::after {
-        bottom: 0;
-        right: 0;
-    }
+    // &::after {
+    //     bottom: 0;
+    //     right: 0;
+    // }
 
     &--selected {
         box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
@@ -99,27 +99,27 @@
         transition: transform 0.4s ease-in-out;
     }
 
-    &--selected::before,
-    &--selected::after {
-        width: 100%;
-        height: 100%;
-    }
+    // &--selected::before,
+    // &--selected::after {
+    //     width: 100%;
+    //     height: 100%;
+    // }
 
-    &--selected::before {
-        border-top-color: purple; // Make borders visible
-        border-right-color: purple;
-        transition: width 0.25s ease-out,
-        // Width expands first
-        height 0.25s ease-out 0.25s; // And then height
-    }
+    // &--selected::before {
+    //     border-top-color: purple; // Make borders visible
+    //     border-right-color: purple;
+    //     transition: width 0.25s ease-out,
+    //     // Width expands first
+    //     height 0.25s ease-out 0.25s; // And then height
+    // }
 
-    &--selected::after {
-        border-bottom-color: purple; // Make borders visible
-        border-left-color: purple;
-        transition: border-color 0s ease-out 0.25s,
-        // Wait for ::before to finish before showing border
-        width 0.25s ease-out 0.5s,
-        // And then exanding width
-        height 0.25s ease-out 0.75s; // And finally height
-    }
+    // &--selected::after {
+    //     border-bottom-color: purple; // Make borders visible
+    //     border-left-color: purple;
+    //     transition: border-color 0s ease-out 0.25s,
+    //     // Wait for ::before to finish before showing border
+    //     width 0.25s ease-out 0.5s,
+    //     // And then exanding width
+    //     height 0.25s ease-out 0.75s; // And finally height
+    // }
 }

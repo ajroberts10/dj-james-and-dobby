@@ -40,6 +40,7 @@ class Packages extends Component {
     render() {
         const { packagePrice, adonsPrice, selectedPackage } = this.state;
         const totalPrice = parseInt(packagePrice) + parseInt(adonsPrice);
+        const barClasses = totalPrice > 0 ? 'packages__price-bar packages__price-bar--open' : 'packages__price-bar';
         return (
             <div className="packages">
                 <div className="container">
@@ -189,7 +190,7 @@ class Packages extends Component {
                         </tbody>
                     </table>
                 </div>
-                <div className="packages__price-bar">
+                <div className={barClasses}>
                     <div className="container">
                         <div className="row">
                             <div className="col-sm-12">
