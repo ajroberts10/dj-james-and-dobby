@@ -29,7 +29,7 @@ class Friends extends Component {
                                 </tr>
                                 <tr>
                                     <td className="friends__logo">
-                                        <img className="friends__img" src="https://res.cloudinary.com/musicandcolour/image/upload/v1572010898/logos/sale.jpg"></img>
+                                        <img className="friends__img" src="https://res.cloudinary.com/musicandcolour/image/upload/v1576245965/logos/sale.png"></img>
                                     </td>
                                     <td>Function /conference venue hire</td>
                                     <td><a className="friends__link" target="_blank" href="https://www.saleevents.co.uk">www.saleevents.co.uk</a></td>

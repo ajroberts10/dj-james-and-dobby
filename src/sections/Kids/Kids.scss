@@ -36,6 +36,10 @@
 
     }
 
+    &__intro {
+        margin-bottom: 32px;
+    }
+
 
 
     &__sub-title {
@@ -67,6 +71,26 @@
 
     &__card {
         margin-bottom: 16px;
+    }
+
+    &__cards-text {
+        font-size: 18px;
+        list-style: none;
+        padding-left: 0;
+
+        &-item {
+            border-bottom: solid 1px grey;
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+
+            &:last-of-type {
+                border-bottom: 0;
+            }
+
+            &-icon {
+                margin-right: 12px;
+            }
+        }
     }
 }
 

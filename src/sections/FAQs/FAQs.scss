@@ -8,10 +8,6 @@
         margin-bottom: 32px;
     }
 
-    &__image {
-
-    }
-
     &__image img {
         display: block;
         margin-left: auto;
@@ -23,6 +19,19 @@
             float: right;
             margin-top: -70px;
         }
+
+    }
+
+    .card {
+        & a {
+            color: white !important;
+            font-weight: bold;
+        }
+    }
+
+    .card-header {
+        background-image: linear-gradient(to bottom right, rgb(255, 141, 42), rgb(172, 56, 172));
+        border: 1px solid black;
 
     }
 }

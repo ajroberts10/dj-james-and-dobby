@@ -1,43 +1,65 @@
 import React, { Component } from "react";
+import {
+    faClock,
+    faMusic,
+    faPlayCircle,
+    faChild,
+    faGift
+ } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PackageCard from "../../components/PackageCard/PackageCard";
-import MenuItem from "../../components/MenuItem/MenuItem";
 import "./Kids.scss";
-import adons from "../Packages/adons.json";
 import { kidsParty } from "../../components/PackageCard/images";
 
 class kids extends Component {
     render() {
-        const tableWidth = { width: "80%" };
         return (
             <div className="kids">
                 <div class="container">
                     <h1 className="kids__title">Kids Parties</h1>
-                    <p className="kids__intro">
-                        We have a number of different packages that can be
-                        tailored to suit your event. Why not try combining our kids party package with some of our ad-ons to make your event
-                        extra special!
-                    </p>
-                    <p>
-                        <small className="kids__disclaimer">
-                            Note: Prices may vary depending on distance to venue
-                            and playing time
-                        </small>
-                    </p>
-                    <PackageCard
-                        id="bronze-images"
-                        title="Bronze Package"
-                        price="180"
-                        packageImages={kidsParty}
-                    >
-                        <ul>
-                            <li>Simple DJ set up with 2 speakers</li>
-                            <li>Age appropriate playlist</li>
-                            <li>Classic party games</li>
-                            <li>Participation dances</li>
-                        </ul>
-                        <p>Why not try combining our kids party package with some of our fantastic <a className="kids__link" href="/packages">ad-ons</a>
-                        </p>
-                    </PackageCard>
+                    <div className="kids__intro">
+                        <p >
+                            We have a number of different packages that can be
+                            tailored to suit your event. Why not try combining our kids party package with some of our ad-ons to make your event
+                            extra special!
+                        </p><small className="kids__disclaimer">
+                                Note: Prices may vary depending on distance to venue
+                                and playing time
+                            </small>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-6 offset-md-3">
+                        <PackageCard
+                            id="kids-images"
+                            title="Kids"
+                            price="180"
+                            packageImages={kidsParty}
+                        >
+                            <ul className="kids__cards-text">
+                                <li className="kids__cards-text-item">
+                                    <FontAwesomeIcon className="kids__cards-text-item-icon" icon={faClock} />
+                                    2hrs DJ Performance
+                                </li>
+                                <li className="kids__cards-text-item">
+                                    <FontAwesomeIcon className="kids__cards-text-item-icon" icon={faPlayCircle} />
+                                    Simple DJ set up with 2 speakers
+                                </li>
+                                <li className="kids__cards-text-item">
+                                    <FontAwesomeIcon className="kids__cards-text-item-icon" icon={faChild} />
+                                    Age appropriate playlist
+                                </li>
+                                <li className="kids__cards-text-item">
+                                    <FontAwesomeIcon className="kids__cards-text-item-icon" icon={faGift} />
+                                    Classic party games
+                                </li>
+                                <li className="kids__cards-text-item">
+                                    <FontAwesomeIcon className="kids__cards-text-item-icon" icon={faMusic} />
+                                    Participation dances
+                                </li>
+                            </ul>
+                        </PackageCard>
+                        </div>
+                    </div>
                     <div class="container kids__section">
                         <div className="col-12 text-center">
                             <h1 className="kids__sub-title kids__sub-title--long">Popular Combos</h1>

@@ -10,13 +10,10 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import PackageCard from '../../components/PackageCard/PackageCard';
-import MenuItem from '../../components/MenuItem/MenuItem';
-import EnquireButton from '../../components/EnquireButton/EnquireButton';
 import './Packages.scss';
 import adons from './adons.json';
 import { bronze, silver, gold } from '../../components/PackageCard/images';
 
-const KIDS_PRICE = "180";
 const BRONZE_PRICE = "250";
 const SILVER_PRICE = "275";
 const GOLD_PRICE = "350";
@@ -47,7 +44,11 @@ class Packages extends Component {
             <div className="packages">
                 <div className="container">
                     <h1 className="packages__title">Packages</h1>
-                    <p className="packages__intro">You can browse our various sound and lighting packages below along with our add-on items that we can provide. Selecting each option will provide you with an estimated package cost at the bottom of the screen. Note this cost may be subject to change due to playing time and distance to venue. </p>
+                    <p className="packages__intro">You can browse our various sound and lighting packages below along with our add-on items that we can provide. Selecting each option will provide you with an estimated package cost at the bottom of the screen. </p>
+
+                    <p>If you're not quite sure what you'll need for your event yet, please feel free to get in touch using our contact form and we can discuss the details.</p>
+
+                    <small>Note this cost may be subject to change due to playing time and distance to venue. </small>
                     <div className="row packages__cards">
                         <div className="col-lg-4">
                             <PackageCard

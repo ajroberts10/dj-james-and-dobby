@@ -24,7 +24,7 @@ class FAQs extends Component {
                             <div className="row">
                                 <div className="col-md-12">
                                     <div className="faqs__image">
-                                        <img src="https://res.cloudinary.com/musicandcolour/image/upload/v1570307707/djs_enk15v.jpg" />
+                                        <img src="https://res.cloudinary.com/musicandcolour/image/upload/v1576242098/dj_siqwzm.png" />
                                     </div>
                                 </div>
                             </div>
