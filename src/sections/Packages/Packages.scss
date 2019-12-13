@@ -125,6 +125,7 @@
 
     &__price-bar {
         background-color: #d3d3d3;
+        border-top: solid 1px black;
         bottom: 0px;
 
         margin-top: 24px;
@@ -137,6 +138,7 @@
         -ms-transition: max-height 1s;
         -o-transition: max-height 1s;
         transition: max-height 1s;
+        z-index: 1000;
 
         & h3 {
             font-size: 24px;
