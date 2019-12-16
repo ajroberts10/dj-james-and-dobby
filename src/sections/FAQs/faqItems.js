@@ -25,14 +25,14 @@ const faqs = [
     },
     {
         question: "Do you have microphones?",
-        answer: "Yes of course! We typically have 1 wireless mic just for us, and 2 wireless mics for you! Any speeches, Karaoke etc we got you covered!"
+        answer: "Yes of course! We typically have 1 wireless mic just for us, and 2 wireless mics for you! Any speeches, Karaoke etc we've got you covered!"
     },
     {
-        question: "I've never planned a party before and i don't know what to do!",
+        question: "I've never planned a party before and I don't know what to do!",
         answer: "Luckily we have! Feel free to ask us anything, we want your event to be a total success and are willing to help and advise anyway we can. We have met and become friends with many vendor services from Photobooths to Dancefloors, Caterers and Event Planners"
     },
     {
-        question: "How do you play the music? Can i plug my phone in, can i plug my usb in, heres a CD",
+        question: "How do you play the music? Can I plug my phone in, can I plug my usb in, heres a CD",
         answer: "We play from a professional mixer and media device called a 'controller'. We have evolved into being digital DJs. We cannot accept CDs, or USBs on the night. BUT, we do ask for any unusual requests in advance so we can buy the tracks, scan them into our library, and most importantly, listen to them!"
     },
     {
@@ -40,11 +40,11 @@ const faqs = [
         answer: "No problem. Although we are extremely busy event DJs, we still love stripping it all back now and again for a pub gig. We are registered with 'Event UK' for easy invoicing too."
     },
     {
-        question: "Do you/ Can you play in my restaurant?",
+        question: "Do you/ can you play in my restaurant?",
         answer: "Absolutely! We'd ask to come see your space, sit down and plan the evening with you. We love a dinner & dance!"
     },
     {
-        question: "How do i book you?",
+        question: "How do I book you?",
         answer: "You can use our website booking form, or use any of our contact details to speak to us directly. You'll find our telephone numbers and email in the footer below"
     },
     {
@@ -57,7 +57,7 @@ const faqs = [
     },
     {
         question: "What exactly do you do?",
-        answer: "We use the details of the event you provide to us, to deliver a production and performance unique to you and your guests. We even program our lights to match your theme or feel (until the dancing begins!). We want your guests to walk in and say 'Wow, look at the DJs setup!'"
+        answer: "We use the details of the event you provide to us, to deliver a production and performance unique to you and your guests. We even program our lights to match your theme or feel (until the dancing begins!). We want your guests to walk in and say 'Wow, look at the DJ's setup!'"
     },
     {
         question: "One more song, one more song!",
@@ -65,7 +65,7 @@ const faqs = [
     },
     {
         question: "I wish to contact you about my event",
-        answer: "No problem! You can call, e-mail, whatsapp, text, messenger. Details can be found here"
+        answer: "No problem! You can call, e-mail, whatsapp, text, messenger. Details can be found in the footer below"
     },
     {
         question: "My event is quite far away from you. Are you willing to travel?",

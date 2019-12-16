@@ -12,7 +12,7 @@ class Friends extends Component {
                         If you're looking for more than just music for your
                         event, we may be able to provide some help. Over the
                         years, we've established close links with a number of
-                        local businesses and individuals that would be happy to
+                        local businesses, charities and individuals that would be happy to
                         assist with planning that special occasion.
                     </p>
                     <p>
@@ -131,7 +131,11 @@ class Friends extends Component {
                             </tr>
                             <tr>
                                 <td className="friends__logo">
-                                    The Emma Cosgrove Foundation
+                                    <img
+                                        className="friends__img"
+                                        src="https://res.cloudinary.com/musicandcolour/image/upload/v1576530083/logos/ECF_logo.png"
+                                        alt="The Emma Cosgrove Foundation logo"
+                                    ></img>
                                 </td>
                                 <td>Supporting teens affected by cancer</td>
                                 <td>

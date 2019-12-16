@@ -10,6 +10,8 @@ export const silver = [
 ];
 
 export const gold = [
+    "https://res.cloudinary.com/musicandcolour/image/upload/c_lfill,h_335,w_503/v1569263035/gold/10.jpg",
+    "https://res.cloudinary.com/musicandcolour/image/upload/c_lfill,h_335,w_503/v1569263035/gold/11.jpg",
     "https://res.cloudinary.com/musicandcolour/image/upload/c_scale,w_400/v1569263035/gold/1.jpg",
     "https://res.cloudinary.com/musicandcolour/image/upload/c_scale,w_400/v1569263035/gold/6.jpg",
     "https://res.cloudinary.com/musicandcolour/image/upload/c_scale,w_400/v1569263035/gold/8.jpg",
