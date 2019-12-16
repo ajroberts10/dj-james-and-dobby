@@ -140,6 +140,10 @@
         transition: max-height 1s;
         z-index: 1000;
 
+        .packages__price-value {
+            display: none;
+        }
+
         & h3 {
             font-size: 24px;
             font-weight: bold;
@@ -148,6 +152,10 @@
 
         &--open {
             max-height: 80px;
+
+            .packages__price-value {
+                display: block;
+            }
         }
     }
 
