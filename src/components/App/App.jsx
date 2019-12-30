@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import ReactGA from 'react-ga';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons'
 import HomePage from '../../pages/HomePage';
@@ -12,6 +13,15 @@ import FriendsPage from '../../pages/FriendsPage';
 
 library.add(faQuoteLeft);
 library.add(faQuoteRight);
+
+ReactGA.initialize('UA-155075068-1');
+ReactGA.pageview("/");
+ReactGA.pageview("/djs");
+ReactGA.pageview("/packages");
+ReactGA.pageview("/packages/kids");
+ReactGA.pageview("/gallery");
+ReactGA.pageview("/faqs");
+ReactGA.pageview("/friends");
 
 class App extends Component {
   render() {
