@@ -15,13 +15,7 @@ library.add(faQuoteLeft);
 library.add(faQuoteRight);
 
 ReactGA.initialize('UA-155075068-1');
-ReactGA.pageview("/");
-ReactGA.pageview("/djs");
-ReactGA.pageview("/packages");
-ReactGA.pageview("/packages/kids");
-ReactGA.pageview("/gallery");
-ReactGA.pageview("/faqs");
-ReactGA.pageview("/friends");
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 class App extends Component {
   render() {
