@@ -13,8 +13,7 @@ export const silver = [
 export const gold = [
     "https://res.cloudinary.com/musicandcolour/image/upload/c_scale,w_400/v1569263035/gold/1.jpg",
     "https://res.cloudinary.com/musicandcolour/image/upload/c_scale,w_400/v1569263035/gold/6.jpg",
-    "https://res.cloudinary.com/musicandcolour/image/upload/c_scale,w_400/v1569263035/gold/8.jpg",
-    "https://res.cloudinary.com/musicandcolour/image/upload/c_scale,h_335,w_500/v1572008519/gold/9.jpg"
+    "https://res.cloudinary.com/musicandcolour/image/upload/c_scale,w_400/v1569263035/gold/8.jpg"
 ]
 
 export const kidsParty = [
