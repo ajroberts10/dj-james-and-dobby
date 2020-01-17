@@ -29,6 +29,10 @@
         text-align: center;
     }
 
+    &__addonsCarousel {
+        margin-bottom: 56px;
+    }
+
     &__cards {
         margin-top: 40px;
 
@@ -236,3 +240,4 @@ input[type="checkbox"] {
         opacity: 1;
     }
 }
+

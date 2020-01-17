@@ -9,10 +9,14 @@ import {
  } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+
 import PackageCard from '../../components/PackageCard/PackageCard';
+import AddonCarousel from '../../components/AddonCarousel/AddonCarousel';
+import AddonPhotoCard from '../../components/AddonPhotoCard/AddonPhotoCard';
 import './Packages.scss';
 import adons from './adons.json';
 import { bronze, silver, gold } from '../../components/PackageCard/images';
+import { addons } from '../../components/AddonPhotoCard/images';
 
 const BRONZE_PRICE = "250";
 const SILVER_PRICE = "275";
@@ -41,6 +45,7 @@ class Packages extends Component {
         const { packagePrice, adonsPrice, selectedPackage } = this.state;
         const totalPrice = parseInt(packagePrice) + parseInt(adonsPrice);
         const barClasses = totalPrice > 0 ? 'packages__price-bar packages__price-bar--open' : 'packages__price-bar';
+
         return (
             <div className="packages">
                 <div className="container">
@@ -162,6 +167,13 @@ class Packages extends Component {
                     </div>
                     <h3 className="packages__steps">Add-ons</h3>
                     <p className="packages__steps-text">Make your event extra special by selecting one or more of our package add-ons. </p>
+                    <div className="packages__addonsCarousel container">
+                        <AddonCarousel>
+                        {addons.map(item => (
+                            <AddonPhotoCard imageSrc={item.src} title={item.title} />
+                        ))}
+                        </AddonCarousel>
+                    </div>
                     <table className="table packages__table">
                         <caption>List of add-ons</caption>
                         <thead>

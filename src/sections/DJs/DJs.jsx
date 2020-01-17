@@ -36,8 +36,18 @@ class DJs extends Component {
                         We have now performed at the majority of popular event venues across the North West of England, and built up a great rapport with venues, vendors and regular clients.
                         </p>
                     </div>
-                    <BioCard {...james} />
-                    <BioCard {...dobby} />
+
+                    <div className="row">
+                        <div className="col-lg-6">
+                            <BioCard {...james} />
+                            <BioCard {...dobby} />
+                        </div>
+                        <div className="col-lg-6">
+                            <div class="fb-page" data-href="https://www.facebook.com/DJJamesDJDobby/" data-tabs="timeline" data-width="602" data-height="335" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/DJJamesDJDobby/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/DJJamesDJDobby/">DJ James &amp; DJ Dobby</a></blockquote></div>
+                        </div>
+
+                    </div>
+
 
                 </div>
             </div>
