@@ -2,7 +2,7 @@ export const addons = [
     { title: "UV Lighting",
       src: "https://res.cloudinary.com/musicandcolour/image/upload/c_scale,h_295,w_302/v1572006271/kids/Image_from_iOS_21.jpg"
     },
-    { title: "Baloon Modelling",
+    { title: "Balloon Modelling",
       src: "https://res.cloudinary.com/musicandcolour/image/upload/c_scale,h_295,w_302/v1570216921/kids/7.jpg"
     },
     { title: "Custom Gobo",
