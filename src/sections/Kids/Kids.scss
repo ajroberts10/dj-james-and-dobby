@@ -24,6 +24,10 @@
         margin-bottom: 36px;
     }
 
+    &__link {
+        color: orange;
+    }
+
     &__title {
         margin-bottom: 32px;
         background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
@@ -57,7 +61,7 @@
         }
 
         &--long {
-            width: 300px;
+            width: 350px;
         }
     }
 

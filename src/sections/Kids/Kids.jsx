@@ -7,9 +7,13 @@ import {
     faGift
  } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import AddonCarousel from '../../components/AddonCarousel/AddonCarousel';
+import AddonPhotoCard from '../../components/AddonPhotoCard/AddonPhotoCard';
 import PackageCard from "../../components/PackageCard/PackageCard";
 import "./Kids.scss";
 import { kidsParty } from "../../components/PackageCard/images";
+import { addons } from '../../components/AddonPhotoCard/images';
+
 
 class kids extends Component {
     render() {
@@ -62,38 +66,14 @@ class kids extends Component {
                     </div>
                     <div class="container kids__section">
                         <div className="col-12 text-center">
-                            <h1 className="kids__sub-title kids__sub-title--long">Popular Combos</h1>
+                            <h1 className="kids__sub-title kids__sub-title--long">Popular Add-ons</h1>
                         </div>
-                        <div className="row homeButtons__columns">
-                            <div className="col-sm-12 col-md-12 col-lg-6">
-                                <div className="card kids__card">
-                                    <div className="card-header">Kids party package with UV ad-on</div>
-                                    <div className="card-body">
-                                        <div class="video">
-                                            <img
-                                                src="https://res.cloudinary.com/musicandcolour/image/upload/c_scale,h_271,w_483/v1572006271/kids/Image_from_iOS_21.jpg"
-                                                className="d-block w-100"
-                                                alt=""
-                                            ></img>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-sm-12 col-md-12 col-lg-6">
-                                <div className="card kids__card">
-                                    <div className="card-header">Kids party package with balloon modelling</div>
-                                    <div className="card-body">
-                                        <div class="video">
-                                            <img
-                                                src="https://res.cloudinary.com/musicandcolour/image/upload/c_scale,h_271,w_483/v1572006271/kids/7.jpg"
-                                                className="d-block w-100"
-                                                alt=""
-                                            ></img>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <p>See our <a className="kids__link" href="/packages">packages</a> page for individual add-on prices</p>
+                        <AddonCarousel>
+                            {addons.map(item => (
+                                <AddonPhotoCard imageSrc={item.src} title={item.title} />
+                            ))}
+                        </AddonCarousel>
                     </div>
                     <div class="container kids__section">
                         <div className="col-12 text-center">
@@ -117,11 +97,11 @@ class kids extends Component {
                             </div>
                             <div className="col-sm-12 col-md-12 col-lg-6">
                                 <div className="card kids__card">
-                                    <div className="card-header">Customised Sound & Lighting</div>
+                                    <div className="card-header">UV Confetti Cannon</div>
                                     <div className="card-body">
                                         <div class="video">
                                             <video
-                                                src="https://res.cloudinary.com/musicandcolour/video/upload/v1570219031/kids/File_from_iOS_1.mp4"
+                                                src="https://res.cloudinary.com/musicandcolour/video/upload/v1581774595/File_from_iOS_1_ylzyhj.mov"
                                                 frameborder="0"
                                                 allowfullscreen
                                                 controls

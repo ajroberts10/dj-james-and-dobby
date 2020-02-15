@@ -38,14 +38,10 @@ class DJs extends Component {
                     </div>
 
                     <div className="row">
-                        <div className="col-lg-6">
+                        <div className="col-lg-12">
                             <BioCard {...james} />
                             <BioCard {...dobby} />
                         </div>
-                        <div className="col-lg-6">
-                            <div class="fb-page" data-href="https://www.facebook.com/DJJamesDJDobby/" data-tabs="timeline" data-width="602" data-height="335" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/DJJamesDJDobby/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/DJJamesDJDobby/">DJ James &amp; DJ Dobby</a></blockquote></div>
-                        </div>
-
                     </div>
 
 

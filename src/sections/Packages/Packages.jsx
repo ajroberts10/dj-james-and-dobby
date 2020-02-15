@@ -169,9 +169,9 @@ class Packages extends Component {
                     <p className="packages__steps-text">Make your event extra special by selecting one or more of our package add-ons. </p>
                     <div className="packages__addonsCarousel container">
                         <AddonCarousel>
-                        {addons.map(item => (
-                            <AddonPhotoCard imageSrc={item.src} title={item.title} />
-                        ))}
+                            {addons.map(item => (
+                                <AddonPhotoCard imageSrc={item.src} title={item.title} />
+                            ))}
                         </AddonCarousel>
                     </div>
                     <table className="table packages__table">
