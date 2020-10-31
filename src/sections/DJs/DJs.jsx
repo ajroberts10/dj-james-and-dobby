@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import BioCard from '../../components/BioCard/BioCard';
 import './DJs.scss';
 
+const getAge = birthDate => Math.floor((new Date() - new Date(birthDate).getTime()) / 3.15576e+10);
+
 const james = {
     position: 'left',
     title: 'DJ James',
     name: 'James Watt',
-    age: '36',
+    age: getAge('1983-10-10'),
     music: 'Northern Soul, Motown, Disco, 80s, RnB, House, Garage, Hip Hop',
     image: 'icon_james.jpg'
 }
@@ -15,7 +17,7 @@ const dobby = {
     position: 'right',
     title: 'DJ Dobby',
     name: 'James Chappell Steele',
-    age: '35',
+    age: getAge('1985-06-30'),
     music: 'Pop, 90s RnB, Garage, Dance, Cheese, Party Anthems',
     image: 'icon_dobby.jpg'
 }

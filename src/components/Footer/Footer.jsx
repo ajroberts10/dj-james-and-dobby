@@ -29,7 +29,7 @@ class Footer extends Component {
                         <div className="col-md-3 footer-ns animated fadeInRight">
                             <h4>Contact</h4>
                             <ul>
-                                <li>07914 392296</li>
+                                <li>07851 956751</li>
                                 <li>07875 269526</li>
                                 <li>djjamesdjdobby@gmail.com</li>
                             </ul>

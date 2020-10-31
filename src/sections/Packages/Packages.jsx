@@ -18,9 +18,9 @@ import adons from './adons.json';
 import { bronze, silver, gold } from '../../components/PackageCard/images';
 import { addons } from '../../components/AddonPhotoCard/images';
 
-const BRONZE_PRICE = "250";
-const SILVER_PRICE = "275";
-const GOLD_PRICE = "350";
+const BRONZE_PRICE = "275";
+const SILVER_PRICE = "325";
+const GOLD_PRICE = "400";
 
 class Packages extends Component {
     constructor(props) {
