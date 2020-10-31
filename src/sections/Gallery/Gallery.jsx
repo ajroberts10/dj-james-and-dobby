@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PhotoGrid from '../../components/PhotoGrid/PhotoGrid';
 import './Gallery.scss';
 
 class Gallery extends Component {
