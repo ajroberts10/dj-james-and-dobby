@@ -1,6 +1,7 @@
 .gallery {
     font-size: 20px;
     margin: 32px 0;
+    height: 60vh;
 
     &__title {
         margin-bottom: 32px;
@@ -8,6 +9,10 @@
 
     &__insta {
         width: 150px;
+    }
+
+    &__link {
+      color: purple !important;
     }
 
 }

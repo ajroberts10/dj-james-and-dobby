@@ -9,12 +9,9 @@ class Gallery extends Component {
                 <div className="container">
                 <h1 className="gallery__title">Gallery</h1>
                     <p className="gallery__intro">
-                        Below are a few photos pulled from our instagram account. Please feel free to click through to our account, maybe even give us a like or a follow ; )
+                        Currently under construction!
                     </p>
-
-                    <p>Gallery powered by <img className="gallery__insta" src="https://res.cloudinary.com/musicandcolour/image/upload/v1570803063/kids/instagram-logo-name.png" alt="instagram"/></p>
-                    <PhotoGrid />
-
+                    <p>Click <a className="gallery__link" href="https://www.instagram.com/djjamesdjdobby/?hl=en" target="__blank">here</a> to check out our Instagram profile in the meantime</p>
                 </div>
             </div>
         );
