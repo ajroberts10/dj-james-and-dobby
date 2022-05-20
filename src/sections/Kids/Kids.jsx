@@ -24,7 +24,7 @@ class kids extends Component {
             <p>
               We have a number of different packages that can be tailored to
               suit your event. Why not try combining our kids party package with
-              some of our ad-ons to make your event extra special!
+              some of our add-ons to make your event extra special!
             </p>
             <small className="kids__disclaimer">
               Note: Prices may vary depending on distance to venue and playing
