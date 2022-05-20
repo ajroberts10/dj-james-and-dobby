@@ -61,6 +61,25 @@ class Packages extends Component {
           </p>
 
           <p>
+            Below is an approximate guide as to which package might be suitable
+            but this can be tailored to your specific event:
+            <ul>
+              <li>
+                <div className="packages__bronze">Bronze</div>: Small Venue
+                (approx 60 guests)
+              </li>
+              <li>
+                <div className="packages__silver">Silver</div>: Mid Venue
+                (approx 120 guests)
+              </li>
+              <li>
+                <div className="packages__gold">Gold</div>: Large Venue (150+
+                guests)
+              </li>
+            </ul>
+          </p>
+
+          <p>
             If you're not quite sure what you'll need for your event yet, please
             feel free to get in touch using our contact form and we can discuss
             the details.
@@ -250,7 +269,17 @@ class Packages extends Component {
           <h3 className="packages__steps">Add-ons</h3>
           <p className="packages__steps-text">
             Make your event extra special by selecting one or more of our
-            package add-ons.{" "}
+            package add-ons!
+          </p>
+          <p>
+            Maybe some <div className="packages__purple">UV Lighting</div> and{" "}
+            <div className="packages__green">lasers</div> to add that nightclub
+            feel to a 21st?
+          </p>
+          <p>
+            Or perhaps add a special touch to a wedding with one of our{" "}
+            <div className="packages__red">Loveheart projectors </div>. Browse
+            our list below to find your perfect party add-ons:
           </p>
           <div className="packages__addonsCarousel container">
             <AddonCarousel>

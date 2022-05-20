@@ -15,4 +15,17 @@
       color: purple !important;
     }
 
+    // &__container::after {
+    //   content: "";
+    //   clear: both;
+    //   display: table;
+    // }
+
+    &__image {
+      // float: left;
+      // width: 33.33%;
+      // padding: 5px;
+      width: 300px;
+    }
+
 }

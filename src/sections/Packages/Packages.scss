@@ -171,6 +171,42 @@
         padding-left: 0;
         padding-right: 0;
     }
+
+    &__bronze {
+      color: #cd7f32;
+      display: inline;
+      font-weight: bold;
+    }
+
+    &__silver {
+      color: darkgray;
+      display: inline;
+      font-weight: bold;
+    }
+
+    &__gold {
+      color: #d4ae37;
+      display: inline;
+      font-weight: bold;
+    }
+
+    &__purple {
+      color: purple;
+      display: inline;
+      font-weight: bold;
+    }
+
+    &__green {
+      color: #0db950;
+      display: inline;
+      font-weight: bold;
+    }
+
+    &__red {
+      color: red;
+      display: inline;
+      font-weight: bold;
+    }
 }
 
 input[type="radio"] {
