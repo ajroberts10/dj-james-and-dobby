@@ -36,11 +36,10 @@ class XmasGallery extends Component {
                 className="w-100 shadow-1-strong rounded mb-4"
                 alt="DJ James and DJ Dobby xmas event"
               />
-
-              <video
-                src="https://res.cloudinary.com/musicandcolour/video/upload/v1668628540/xmas/1.mp4"
+              <img
+                src="https://res.cloudinary.com/musicandcolour/image/upload/v1668628536/xmas/15.jpg"
                 className="w-100 shadow-1-strong rounded mb-4"
-                alt="DJ James and DJ Dobby xmas event"
+                alt="DJ James and DJ Dobby event"
               />
 
               <img
@@ -94,12 +93,6 @@ class XmasGallery extends Component {
 
             <div className="col-lg-4 mb-4 mb-lg-0">
               <img
-                src="https://res.cloudinary.com/musicandcolour/image/upload/v1668628536/xmas/12.jpg"
-                className="w-100 shadow-1-strong rounded mb-4"
-                alt="DJ James and DJ Dobby event"
-              />
-
-              <img
                 src="https://res.cloudinary.com/musicandcolour/image/upload/v1668628536/xmas/13.jpg"
                 className="w-100 shadow-1-strong rounded mb-4"
                 alt="DJ James and DJ Dobby event"
@@ -122,11 +115,6 @@ class XmasGallery extends Component {
                 className="w-100 shadow-1-strong rounded mb-4"
                 alt="DJ James and DJ Dobby event"
               />
-              <img
-                src="https://res.cloudinary.com/musicandcolour/image/upload/v1668628536/xmas/15.jpg"
-                className="w-100 shadow-1-strong rounded mb-4"
-                alt="DJ James and DJ Dobby event"
-              />
 
               <img
                 src="https://res.cloudinary.com/musicandcolour/image/upload/v1668628536/xmas/17.jpg"
@@ -135,7 +123,7 @@ class XmasGallery extends Component {
               />
             </div>
 
-            <div className="col-lg-3 mb-4 mb-lg-0">
+            <div className="col-lg-4 mb-4 mb-lg-0">
               <img
                 src="https://res.cloudinary.com/musicandcolour/image/upload/v1668628536/xmas/20.jpg"
                 className="w-100 shadow-1-strong rounded mb-4"
