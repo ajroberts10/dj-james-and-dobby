@@ -30,6 +30,24 @@ class XmasGallery extends Component {
             to drop us a message on Facebook.
           </p>
           <div class="row">
+            <div class="container kids__section">
+              <div className="row homeButtons__columns">
+                <div className="col-sm-12 col-md-12 col-lg-12">
+                  <div className="card kids__card">
+                    <div className="card-body">
+                      <div class="video">
+                        <video
+                          src="https://res.cloudinary.com/musicandcolour/video/upload/v1570217127/kids/File_from_iOS.mp4"
+                          frameborder="0"
+                          allowfullscreen
+                          controls
+                        ></video>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
               <img
                 src="https://res.cloudinary.com/musicandcolour/image/upload/v1668628536/xmas/0.jpg"
